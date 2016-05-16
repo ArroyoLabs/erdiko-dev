@@ -1,11 +1,11 @@
 {
-  "name": "mywu-admin",
+  "name": "bootstrap",
   "version": "0.0.1",
   "description": "",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/UncleSisu/mywu-global"
+    "url": "git://github.com/ArroyoLabs/erdiko"
   },
   "dependencies": {},
   "devDependencies": {
