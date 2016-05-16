@@ -8,6 +8,9 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 160px;
 }
+body > .container {
+  padding: 60px 15px 0;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -19,5 +22,13 @@ body {
   background-color: @gray-lighter;
 }
 .spacer {
-  height: 40px;
+  height: 42px;
+}
+.msgs-header {
+  padding-bottom: 0;
+  margin: 10px 0 0;
+}
+.msgs-header + .container {
+  margin-top: 0;
+  padding-top: 0;
 }

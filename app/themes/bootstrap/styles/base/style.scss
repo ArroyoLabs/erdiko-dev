@@ -1,0 +1,77 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/bootswatch-sass/flatly/bootstrap";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 160px;
+}
+body > .container {
+  padding: 60px 15px 0;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top:10px;
+
+  /* Set the fixed height of the footer here */
+  height: 160px;
+  background-color: $gray-lighter;
+}
+.spacer {
+  height: 42px;
+}
+.msgs-header {
+  padding-bottom: 0;
+  margin: 10px 0 0;
+}
+.msgs-header + .container {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+$gray-blue:             #639db2;
+
+.btn-toolbar {
+    .active {
+        background-color: $gray-blue !important;
+        border-color: $gray-blue !important;
+    }
+}
+
+#user-transactions {
+
+    .btn {
+
+
+        &.status {
+            color: $gray-lighter;
+
+            &.active {
+                @include box-shadow(none);
+            }
+
+            &.approve {
+                &.active .glyphicon {
+                    color: green;
+                }
+            }
+
+            &.reject {
+                &.active .glyphicon {
+                    color: red;
+                }
+            }
+
+        }  
+
+    }
+
+}

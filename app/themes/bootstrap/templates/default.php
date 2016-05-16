@@ -26,6 +26,7 @@ foreach ($this->getCss() as $css) {
 <body>
 
     <?php echo $this->getTemplateHtml('header'); ?>
+    <?php echo $this->getTemplateHtml('messages'); ?>
     <?php echo $this->getContent(); ?>
     <?php echo $this->getTemplateHtml('footer'); ?>
 
