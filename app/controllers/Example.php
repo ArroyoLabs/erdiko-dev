@@ -4,7 +4,7 @@
  * Multiple examples of how you can use erdiko.  It includes some simple use cases.
  *
  * @category    app
- * @package     Example
+ * @package     controllers
  * @copyright   Copyright (c) 2016, Arroyo Labs, www.arroyolabs.com
  * @author      John Arroyo, john@arroyolabs.com
  */
@@ -47,92 +47,14 @@ class Example extends \erdiko\core\Controller
         $this->setContent("Hello World");
     }
 
-    public function getMustacheTest($name)
-    {
-        return "[[{$name}]]";
-    }
-
-    public function getMustacheTest2()
-    {
-        return $this->getView('examples/examples');
-    }
-
-    /** 
-     * Example playing with mustache templates
-     * the $string variable would really be a view, but it's good to see here.
-     */
-    public function getMustache()
-    {
-        $string = "Hello, {{ planet }}!
-            {{# get_region }}two{{/ get_region }}
-            {{# get_region }}'three'{{/ get_region }}
-            {{# index }}four{{/ index }}
-            {{# getMustacheTest2 }}five{{/ getMustacheTest2 }}
-            ";
-
-        $m = new \Mustache_Engine;
-        $data = array(
-            'planet' => 'world',
-            'get_region' => function($name) { 
-                return $this->getMustacheTest($name); 
-                },
-            'index' => function() {
-                return $this->getMustacheTest2();
-                }
-            );
-        $content = $m->render($string, $data);
-        // $content .= " data: ".print_r($data, true);
-
-        $this->setTitle('Mustache');
-        $this->setContent($content);
-    }
-
-    /** 
-     * Example playing with mustache templates
-     * the $string variable would really be a view, but it's good to see here.
-     */
-    public function getMustacheview()
-    {
-        $data = array(
-            'planet' => 'world',
-            'get_region' => function($name) { 
-                return $this->getMustacheTest($name); 
-                }
-            );
-
-        $this->setTitle('Mustache View');
-        $this->addView('examples/mustache', $data);
-
-        // echo " data: ".print_r($data, true);
-    }
-
-    /** 
-     * Example playing with mustache templates
-     * the $string variable would really be a view, but it's good to see here.
-     */
-    public function getMustachelayout()
-    {
-        // You can add other views (containers) or text
-        $columns = array(
-            'one' => new \erdiko\core\View('examples/one'),
-            'two' => $this->getView('examples/two') . $this->getView('examples/three')
-            );
-        
-        $this->setContent($this->getLayout('2column-mustache', $columns));
-
-        $this->setTitle('Mustache Template');
-
-        // echo " data: ".print_r($data, true);
-    }
-
     /**
      * Homepage Action (index)
      */
     public function getIndex()
     {
         // Add page data
-        $this->setTitle('Examples');
-        $this->addView('examples/examples');
+        $this->setTitle('Welcome to Erdiko');
+        $this->addView('examples/index');
     }
 
     /**

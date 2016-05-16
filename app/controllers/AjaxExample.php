@@ -4,7 +4,7 @@
  * Multiple examples of how you can use erdiko.  It includes some simple use cases.
  *
  * @category    app
- * @package     Example
+ * @package     controllers
  * @copyright   Copyright (c) 2016, Arroyo Labs, www.arroyolabs.com
  * @author      John Arroyo, john@arroyolabs.com
  */
