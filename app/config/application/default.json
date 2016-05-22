@@ -45,9 +45,6 @@
             "href": "/examples/config",
             "title": "view config"
         }, {
-            "href": "/examples/exception",
-            "title": "exception example"
-        }, {
             "href": "/examples/about",
             "title": "about"
         }]

@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div role="main">
+        <div class="col-lg-12 col-md-12 col-xs-12">
             <?php
                 $item = array(
                 'size' => $data['columns'],

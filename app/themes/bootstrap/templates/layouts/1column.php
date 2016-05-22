@@ -7,7 +7,7 @@
     </div>
 	<?php endif ?>
     <div class="row">
-        <div class="col-md-12" role="main">
+        <div class="col-lg-12 col-md-12" role="main">
             <?php echo $this->getRegion('body') ?>    
         </div>
     </div>
