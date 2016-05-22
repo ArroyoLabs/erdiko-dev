@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-12 col-md-8 col-sm-6">
-
+    <div class="col-lg-12 col-md-12">
+      <h1>Mark Up</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
       <h1>h1 Header</h1>
       <h2>h2 Header</h2>
       <h3>h3 Header</h3>

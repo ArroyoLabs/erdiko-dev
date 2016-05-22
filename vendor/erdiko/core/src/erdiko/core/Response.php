@@ -55,7 +55,7 @@ class Response
      */
     public function getDataValue($key)
     {
-        return $this->_data[$key];
+        return empty($this->_data[$key]) ? null: $this->_data[$key];
     }
 
     /**

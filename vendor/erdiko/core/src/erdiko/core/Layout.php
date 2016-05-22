@@ -21,6 +21,8 @@ class Layout extends Container
     protected $_regions = array();
     /** Data */
     protected $_data = array();
+    /** Title */
+    protected $_title = "";
     /** Theme */
     protected $_theme;
     /** Theme */
@@ -41,6 +43,26 @@ class Layout extends Container
         $this->setThemeRootFolder('themes');
         $this->setThemeName($themeName);
         $this->setTemplateFolder($this->getThemeRootFolder().'/'.$themeName.'/templates/layouts');
+    }
+
+    /**
+     * setTitle
+     *
+     * @param string $title
+     */
+    public function setTitle($title)
+    {
+        $this->_title = $title;
+    }
+
+    /**
+     * getTitle
+     *
+     * @return string $title
+     */
+    public function getTitle()
+    {
+        return $this->_title;
     }
 
     /**

@@ -215,6 +215,16 @@ class Controller
     }
 
     /**
+     * Get Response data value
+     *
+     * @param string $key
+     */
+    public function getResponseDataValue($key)
+    {
+        return $this->getResponse()->getDataValue($key);
+    }
+
+    /**
      * Add page title text to current page
      *
      * @param string $title
@@ -232,6 +242,16 @@ class Controller
     public function setBodyTitle($title)
     {
         $this->setResponseDataValue('body_title', $title);
+    }
+
+    /**
+     * Get page content title to be themed in a layout or view
+     *
+     * @param string $title
+     */
+    public function getBodyTitle()
+    {
+        return $this->getResponseDataValue('body_title');
     }
 
     /**
@@ -344,6 +364,7 @@ class Controller
     public function getLayout($layoutName, $data = null, $templateRootFolder = null)
     {
         $layout = new \erdiko\core\Layout($layoutName, $data, $this->getThemeName());
+        $layout->setTitle($this->getBodyTitle());
 
         if ($templateRootFolder != null) {
             $layout->setViewRootFolder($templateRootFolder);

@@ -58,6 +58,16 @@ class Example extends \erdiko\core\Controller
     }
 
     /**
+     * Homepage Action (index)
+     */
+    public function getExamples()
+    {
+        // Add page data
+        $this->setTitle('Erdiko page examples');
+        $this->addView('examples/list');
+    }
+
+    /**
      * Get baseline, the simplest page around town
      */
     public function getBaseline()
@@ -170,7 +180,21 @@ class Example extends \erdiko\core\Controller
     }
 
     /**
-     * Get two column
+     * Get one column layout example
+     */
+    public function getOnecolumn()
+    {
+        // Set page using a layout
+        $columns = array(
+            'body' => $this->getView('examples/one'),
+            );
+        
+        $this->setTitle('1 Column Layout');
+        $this->setContent($this->getLayout('1column', $columns));
+    }
+
+    /**
+     * Get two column layout example
      */
     public function getTwocolumn()
     {
@@ -180,12 +204,12 @@ class Example extends \erdiko\core\Controller
             'two' => $this->getView('examples/nested_view')
             );
         
-        $this->setTitle('Example: 2 Column Layout Page');
+        $this->setTitle('2 Column Layout');
         $this->setContent($this->getLayout('2column', $columns));
     }
 
     /**
-     * Get three column
+     * Get three column layout example
      */
     public function getThreecolumn()
     {
@@ -196,7 +220,7 @@ class Example extends \erdiko\core\Controller
             'three' => $this->getView('examples/three')
             );
         
-        $this->setTitle('Example: 3 Column Layout Page');
+        $this->setTitle('3 Column Layout');
         $this->setContent($this->getLayout('3column', $columns));
     }
 
@@ -210,7 +234,7 @@ class Example extends \erdiko\core\Controller
             'count' => 12
             );
         
-        $this->setTitle('Example: Grid');
+        $this->setTitle('Grid');
         $this->setContent($this->getLayout('grid/default', $data));
     }
 
@@ -221,8 +245,8 @@ class Example extends \erdiko\core\Controller
      */
     public function getConfig()
     {
-        $data = \Erdiko::getConfig("application/default");
-        $this->setTitle('Shopify: Customers');
+        $data = \Erdiko::getConfig();
+        $this->setTitle('Get Config Data');
         $this->setContent($this->getLayout('json', $data));
     }
 
@@ -231,7 +255,7 @@ class Example extends \erdiko\core\Controller
      */
     public function getException()
     {
-        $this->setContent($this->getLayout('notExist', null));
+        $this->setContent($this->getLayout('doesNotExist', null));
     }
 
     /**
@@ -240,9 +264,8 @@ class Example extends \erdiko\core\Controller
     public function getAbout()
     {
         $this->setTitle("About");
-
         $data = \Erdiko::getConfig("application/default");
-        $this->setContent("<h2>{$data['site']['full_name']}</h2>
-        <h3>{$data['site']['tagline']}</h3> <p>{$data['site']['description']}</p>");
+        
+        $this->addView('examples/about', $data);
     }
 }
