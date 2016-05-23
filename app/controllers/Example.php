@@ -89,7 +89,7 @@ class Example extends \erdiko\core\Controller
      */
     public function getSetview()
     {
-        $this->setTitle('Example: Page with a single view');
+        $this->setTitle('Page with a single view');
         $this->addView('examples/setview');
     }
 
@@ -98,7 +98,7 @@ class Example extends \erdiko\core\Controller
      */
     public function getSetmultipleviews()
     {
-        $this->setTitle('Example: Page with multiple views');
+        $this->setTitle('Page with multiple views');
 
         // Include multiple views directly
         $content = $this->getView('examples/one');
@@ -113,7 +113,7 @@ class Example extends \erdiko\core\Controller
      */
     public function getSetmultipleviewsAlt()
     {
-        $this->setTitle('Example: Page with multiple views (alt)');
+        $this->setTitle('Page with multiple views (alt)');
 
         // Add multiple views using api (better approach)
         $this->addView('examples/one');

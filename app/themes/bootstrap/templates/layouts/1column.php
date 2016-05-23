@@ -1,7 +1,7 @@
 <div class="container">
 	<?php if(!empty( $this->getTitle() )):?>
     <div class="row">
-        <div class="col-lg-12 col-md-12">
+        <div class="col-12">
             <h1><?php echo $this->getTitle() ?></h1>
         </div>
     </div>
