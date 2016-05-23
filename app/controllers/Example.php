@@ -54,7 +54,7 @@ class Example extends \erdiko\core\Controller
     {
         // Add page data
         $this->setTitle('Welcome to Erdiko');
-        $this->addView('examples/index');
+        $this->addView('examples/home');
     }
 
     /**
@@ -72,8 +72,7 @@ class Example extends \erdiko\core\Controller
      */
     public function getBaseline()
     {
-        $this->setContent("The simplest page possible");
-        // $test = Erdiko::log("This is my log message."); // testing the logger
+        $this->setContent("<p>The simplest page possible</p>");
     }
 
     /**
@@ -238,7 +237,7 @@ class Example extends \erdiko\core\Controller
         $this->setContent($this->getLayout('grid/default', $data));
     }
 
-    /* Footer */
+    /* Footer Pages */
 
     /**
      * Get Config

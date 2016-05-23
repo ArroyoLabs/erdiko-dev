@@ -23,7 +23,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 }
 body > .container, body > .container-fluid {
   padding: 60px 15px 0;
@@ -57,6 +57,6 @@ body > .container, body > .container-fluid {
   padding-top:10px;
 
   /* Set the fixed height of the footer here */
-  height: 160px;
+  height: 100px;
   background-color: $gray-lighter;
 }
