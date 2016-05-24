@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-    <div role="main">
+    <div class="col-12" role="main">
         <?php
             // $data = $this->getData();
             $jsonString = json_encode($data, JSON_PRETTY_PRINT);

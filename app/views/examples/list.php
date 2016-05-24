@@ -12,6 +12,7 @@
                 <a class="list-group-item" href="/examples/twocolumn">2 column Layout</a>
         		<a class="list-group-item" href="/examples/threecolumn">3 column Layout</a>
                 <a class="list-group-item" href="/examples/carousel">Carousel</a>
+                <a class="list-group-item" href="/examples/flashmessages">Flash Messages</a>
                 <a class="list-group-item" href="/examples/setmultipleviews">Page with multiple views</a>
                 <a class="list-group-item" href="/examples/setmultipleviews-alt">Page with multiple views (alt)</a>
                 <a class="list-group-item" href="/examples/setview2">Page with multiple views (alt 2)</a>

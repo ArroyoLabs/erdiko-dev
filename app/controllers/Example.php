@@ -153,6 +153,17 @@ class Example extends \erdiko\core\Controller
     }
 
     /**
+     * Flash Messages Action
+     */
+    public function getFlashmessages()
+    {
+        \erdiko\core\helpers\FlashMessages::set("This is a success message", "success");
+        \erdiko\core\helpers\FlashMessages::set("This is an info message", "info");
+        \erdiko\core\helpers\FlashMessages::set("This is a warning message", "warning");
+        \erdiko\core\helpers\FlashMessages::set("This is a danger/error message", "danger");
+    }
+
+    /**
      * Get php info
      */
     public function getPhpinfo()
@@ -245,8 +256,14 @@ class Example extends \erdiko\core\Controller
     public function getConfig()
     {
         $data = \Erdiko::getConfig();
-        $this->setTitle('Get Config Data');
-        $this->setContent($this->getLayout('json', $data));
+        $this->setTitle('Config Data');
+        // $this->addView('examples/json', $data);
+
+        // Set page using a layout
+        $columns = array(
+            'body' => $this->getView('examples/json', $data),
+            );
+        $this->setContent($this->getLayout('1column', $columns));
     }
 
     /**
