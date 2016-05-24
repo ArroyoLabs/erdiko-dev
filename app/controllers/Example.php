@@ -234,7 +234,7 @@ class Example extends \erdiko\core\Controller
             );
         
         $this->setTitle('Grid');
-        $this->setContent($this->getLayout('grid/default', $data));
+        $this->addView('examples/grid', $data);
     }
 
     /* Footer Pages */
