@@ -1,6 +1,6 @@
 {
     "name": "erdiko/erdiko",
-    "description": "Enterprise Glue (PHP Micro Framework)",
+    "description": "Erdiko MVC micro framework (enterprise glue)",
     "keywords": ["framework", "erdiko"],
     "homepage": "http://erdiko.org",
     "license": "MIT",
@@ -11,12 +11,19 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "erdiko/core": "0.8.*",
+        "php": ">=5.4.0",
+        "erdiko/core": "dev-develop as 0.9.0",
         "twbs/bootstrap": "^3.3.6"
     },
     "config": {
         "vendor-dir": "vendor",
         "minimum-stability": "dev"
-    }
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/ArroyoLabs/erdiko"
+    },{
+        "type": "vcs",
+        "url": "https://github.com/ArroyoLabs/erdiko-core"
+    }]
 }

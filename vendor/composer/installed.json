@@ -183,34 +183,33 @@
     },
     {
         "name": "erdiko/core",
-        "version": "0.8.16",
-        "version_normalized": "0.8.16.0",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
         "source": {
             "type": "git",
             "url": "https://github.com/ArroyoLabs/erdiko-core.git",
-            "reference": "f3f0e9f66ad79c21c29bf5f064e72f5e5548f6ac"
+            "reference": "c81562e1880602d7a7af6093a92203e5b821cc6f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ArroyoLabs/erdiko-core/zipball/f3f0e9f66ad79c21c29bf5f064e72f5e5548f6ac",
-            "reference": "f3f0e9f66ad79c21c29bf5f064e72f5e5548f6ac",
+            "url": "https://api.github.com/repos/ArroyoLabs/erdiko-core/zipball/c81562e1880602d7a7af6093a92203e5b821cc6f",
+            "reference": "c81562e1880602d7a7af6093a92203e5b821cc6f",
             "shasum": ""
         },
         "require": {
             "erusev/parsedown": ">=1.6",
             "mustache/mustache": "2.*",
-            "php": ">=5.3.3",
+            "php": ">=5.4.0",
             "psr/log": "^1.0"
         },
-        "time": "2016-04-13 00:41:33",
+        "time": "2016-05-24 08:11:52",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
-            "psr-0": {
-                "erdiko\\core": "src/"
+            "psr-4": {
+                "erdiko\\core\\": "src/"
             }
         },
-        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -220,12 +219,16 @@
                 "email": "info@arroyolabs.com"
             }
         ],
-        "description": "Enterprise Glue (Micro MVC Framework)",
+        "description": "Erdiko core - MVC micro framework",
         "homepage": "http://erdiko.org",
         "keywords": [
             "erdiko",
             "erdiko-core",
             "framework"
-        ]
+        ],
+        "support": {
+            "source": "https://github.com/ArroyoLabs/erdiko-core/tree/develop",
+            "issues": "https://github.com/ArroyoLabs/erdiko-core/issues"
+        }
     }
 ]

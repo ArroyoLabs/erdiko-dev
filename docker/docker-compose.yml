@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  apache:
+    container_name: erdiko_web
+    build:
+      context: .
+      args:
+        folder: ./apache
+    image: erdiko_lamp
+    volumes:
+      - ../:/var/www/code
+    ports:
+      - "8088:80"
+      - "448:443"

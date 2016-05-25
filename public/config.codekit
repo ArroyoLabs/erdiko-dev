@@ -1,14 +1,102 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19115",
+"creatorBuild": "19127",
 "files": {
-	"\/favicon.png": {
+	"\/favicon-120.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2735,
-		"inputAbbreviatedPath": "\/favicon.png",
-		"outputAbbreviatedPath": "\/favicon.png",
+		"initialSize": 6058,
+		"inputAbbreviatedPath": "\/favicon-120.png",
+		"outputAbbreviatedPath": "\/favicon-120.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicon-152.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7762,
+		"inputAbbreviatedPath": "\/favicon-152.png",
+		"outputAbbreviatedPath": "\/favicon-152.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicon-76.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3605,
+		"inputAbbreviatedPath": "\/favicon-76.png",
+		"outputAbbreviatedPath": "\/favicon-76.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicon-96.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4519,
+		"inputAbbreviatedPath": "\/favicon-96.png",
+		"outputAbbreviatedPath": "\/favicon-96.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/ErdikoShieldLogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27567,
+		"inputAbbreviatedPath": "\/images\/ErdikoShieldLogo.png",
+		"outputAbbreviatedPath": "\/images\/ErdikoShieldLogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/grid-item.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6905,
+		"inputAbbreviatedPath": "\/images\/grid-item.png",
+		"outputAbbreviatedPath": "\/images\/grid-item.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/slide1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15948,
+		"inputAbbreviatedPath": "\/images\/slide1.png",
+		"outputAbbreviatedPath": "\/images\/slide1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/slide2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16347,
+		"inputAbbreviatedPath": "\/images\/slide2.png",
+		"outputAbbreviatedPath": "\/images\/slide2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/slide3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16378,
+		"inputAbbreviatedPath": "\/images\/slide3.png",
+		"outputAbbreviatedPath": "\/images\/slide3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -18,6 +106,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/themes\/bootstrap\/css\/base\/styles.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/themes\/bootstrap\/css\/base\/styles.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -39,6 +136,48 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/themes\/bootstrap\/css\/styles.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/themes\/bootstrap\/css\/styles.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/themes\/bootstrap\/images\/slide1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15948,
+		"inputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide1.png",
+		"outputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/themes\/bootstrap\/images\/slide2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16347,
+		"inputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide2.png",
+		"outputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/themes\/bootstrap\/images\/slide3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16378,
+		"inputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide3.png",
+		"outputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/themes\/bootstrap\/js\/bootstrap.js": {
 		"fileType": 64,
@@ -90,6 +229,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/home.js",
 		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/home-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/themes\/bootstrap\/js\/scripts.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/scripts.min.js",
+		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/scripts.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

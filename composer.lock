@@ -4,36 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c9abb2962e47a483a62a6235478d687b",
-    "content-hash": "03ed46a5f266c5b352fa7f9076a8db4c",
+    "hash": "bee01fd8991618dd920d322322e733c1",
+    "content-hash": "c8ae15655f001ea575a345299b8a0e9c",
     "packages": [
         {
             "name": "erdiko/core",
-            "version": "0.8.16",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ArroyoLabs/erdiko-core.git",
-                "reference": "f3f0e9f66ad79c21c29bf5f064e72f5e5548f6ac"
+                "reference": "c81562e1880602d7a7af6093a92203e5b821cc6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ArroyoLabs/erdiko-core/zipball/f3f0e9f66ad79c21c29bf5f064e72f5e5548f6ac",
-                "reference": "f3f0e9f66ad79c21c29bf5f064e72f5e5548f6ac",
+                "url": "https://api.github.com/repos/ArroyoLabs/erdiko-core/zipball/c81562e1880602d7a7af6093a92203e5b821cc6f",
+                "reference": "c81562e1880602d7a7af6093a92203e5b821cc6f",
                 "shasum": ""
             },
             "require": {
                 "erusev/parsedown": ">=1.6",
                 "mustache/mustache": "2.*",
-                "php": ">=5.3.3",
+                "php": ">=5.4.0",
                 "psr/log": "^1.0"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "erdiko\\core": "src/"
+                "psr-4": {
+                    "erdiko\\core\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -43,14 +42,18 @@
                     "email": "info@arroyolabs.com"
                 }
             ],
-            "description": "Enterprise Glue (Micro MVC Framework)",
+            "description": "Erdiko core - MVC micro framework",
             "homepage": "http://erdiko.org",
             "keywords": [
                 "erdiko",
                 "erdiko-core",
                 "framework"
             ],
-            "time": "2016-04-13 00:41:33"
+            "support": {
+                "source": "https://github.com/ArroyoLabs/erdiko-core/tree/develop",
+                "issues": "https://github.com/ArroyoLabs/erdiko-core/issues"
+            },
+            "time": "2016-05-24 08:11:52"
         },
         {
             "name": "erusev/parsedown",
@@ -228,13 +231,22 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "0.9.0",
+            "alias_normalized": "0.9.0.0",
+            "version": "dev-develop",
+            "package": "erdiko/core"
+        }
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "erdiko/core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.4.0"
     },
     "platform-dev": []
 }
