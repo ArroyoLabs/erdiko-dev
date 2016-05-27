@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  php7:
+    container_name: erdiko_web_php7
+    build:
+      context: .
+      args:
+        folder: ./apache
+    image: erdiko_lamp_u16
+    volumes:
+      - ../../:/var/www/code
+    ports:
+      - "8008:80"
+      - "449:443"

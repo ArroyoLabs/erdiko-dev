@@ -5,6 +5,6 @@ Docker
 # open up docker shell, cd to your lamp docker file e.g. /docker/web and run the following commands...
 
 #1 Build and run the Docker container
-    `docker-compose up`
+    `docker-compose up -d`
 
-# erdiko.local or http://172.19.0.2
+# erdiko.local or http://0.0.0.0
