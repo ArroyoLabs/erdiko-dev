@@ -255,9 +255,14 @@ class Example extends \erdiko\core\Controller
      */
     public function getConfig()
     {
-        $data = \Erdiko::getConfig();
+        $contextConfig = \Erdiko::getConfig();
         $this->setTitle('Config Data');
-        // $this->addView('examples/json', $data);
+        $data = array(
+            'context' => getenv('ERDIKO_CONTEXT'),
+            'test' => $_ENV['ERDIKO_CONTEXT'],
+            'test_r' => print_r($_ENV, true),
+            'config file data' => $contextConfig
+            );
 
         // Set page using a layout
         $columns = array(

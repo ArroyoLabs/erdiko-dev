@@ -281,13 +281,14 @@ class Theme extends Container
 
     /**
      * Get context config
+     * This is the application config for the given context (e.g. default site)
      *
      * @param string $context
-     * @return string
+     * @return array $config, application config
      */
     public function getContextConfig($context = 'default')
     {
-        return Erdiko::getConfig($context.'/application');
+        return Erdiko::getConfig('application', $context);
     }
 
     /**

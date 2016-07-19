@@ -6,7 +6,7 @@
  *
  * @category    Erdiko
  * @package         Erdiko
- * @copyright   Copyright (c) 2015, Arroyo Labs, www.arroyolabs.com
+ * @copyright   Copyright (c) 2016, Arroyo Labs, www.arroyolabs.com
  * @author      John Arroyo, john@arroyolabs.com
  */
 
@@ -82,9 +82,12 @@ class Erdiko
     /**
      * Get configuration
      */
-    public static function getConfig($name = 'default/application')
+    public static function getConfig($name = 'application', $context = null)
     {
-        $filename = APPROOT.'/config/'.$name.'.json';
+        if($context == null)
+            $context = getenv('ERDIKO_CONTEXT');
+
+        $filename = APPROOT."/config/{$context}/{$name}.json";
         return self::getConfigFile($filename);
     }
     
@@ -93,9 +96,11 @@ class Erdiko
      *
      * @todo cache the loaded/compiled routes
      */
-    public static function getRoutes($context = 'default')
+    public static function getRoutes($context = null)
     {
-        $file = APPROOT.'/config/'.$context.'/routes.json';
+        if($context == null)
+            $context = getenv('ERDIKO_CONTEXT');
+        $file = APPROOT."/config/{$context}/routes.json";
         $applicationConfig = Erdiko::getConfigFile($file);
         
         return $applicationConfig['routes'];
@@ -129,7 +134,8 @@ class Erdiko
     {
         if(Erdiko::$_logObject==null)
         {
-            $config = Erdiko::getConfig(ERDIKO_CONTEXT."/application");
+            $erdikoContext = getenv('ERDIKO_CONTEXT');
+            $config = Erdiko::getConfig("{$erdikoContext}/application");
             $logFiles = $config["logs"]["files"][0];
             $logDir = $config["logs"]["path"];
 
@@ -149,7 +155,8 @@ class Erdiko
      */
     public static function getCache($cacheType = "default")
     {
-        $config = Erdiko::getConfig(ERDIKO_CONTEXT."/application");
+        $context = getenv('ERDIKO_CONTEXT');
+        $config = Erdiko::getConfig("{$context}/application");
         
         if (isset($config["cache"][$cacheType])) {
             $cacheConfig = $config["cache"][$cacheType];

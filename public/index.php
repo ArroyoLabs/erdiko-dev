@@ -10,10 +10,14 @@
  */
 
 include_once dirname(__DIR__)."/bootstrap.php";
-define('ERDIKO_CONTEXT', 'default'); // switch context for multi-site abilities
+
+// @todo move to bootstrap or appstrap?
+if(empty(getenv('ERDIKO_CONTEXT')))
+	putenv("ERDIKO_CONTEXT=default");
+// $_ENV['ERDIKO_CONTEXT'] = 'default';
 
 try {
-    $routes = Erdiko::getRoutes(ERDIKO_CONTEXT);
+    $routes = Erdiko::getRoutes(getenv('ERDIKO_CONTEXT'));
     Toro::serve($routes);
 
 } catch (\Exception $e) {

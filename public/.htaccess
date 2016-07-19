@@ -1,5 +1,9 @@
+# Rewrite rules
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php)
 RewriteRule ^(.*)$ /index.php/$1 [L]
+
+# Override your erdiko context here (can override what is set in host environment)
+# SetEnv ERDIKO_CONTEXT name-of-your-context
