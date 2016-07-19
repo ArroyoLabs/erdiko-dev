@@ -23,4 +23,5 @@ require_once ERDIKO.'/autoload.php';
 require_once VENDOR.'/autoload.php';
 
 // load the application bootstrapper (user defined)
+// @todo make the appstrap context specific
 require_once APPROOT.'/appstrap.php';

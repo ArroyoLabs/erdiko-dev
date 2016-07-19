@@ -287,7 +287,7 @@ class Theme extends Container
      */
     public function getContextConfig($context = 'default')
     {
-        return Erdiko::getConfig('application/'.$context);
+        return Erdiko::getConfig($context.'/application');
     }
 
     /**

@@ -82,7 +82,7 @@ class Erdiko
     /**
      * Get configuration
      */
-    public static function getConfig($name = 'application/default')
+    public static function getConfig($name = 'default/application')
     {
         $filename = APPROOT.'/config/'.$name.'.json';
         return self::getConfigFile($filename);
@@ -93,9 +93,9 @@ class Erdiko
      *
      * @todo cache the loaded/compiled routes
      */
-    public static function getRoutes()
+    public static function getRoutes($context = 'default')
     {
-        $file = APPROOT.'/config/application/routes.json';
+        $file = APPROOT.'/config/'.$context.'/routes.json';
         $applicationConfig = Erdiko::getConfigFile($file);
         
         return $applicationConfig['routes'];
@@ -129,7 +129,7 @@ class Erdiko
     {
         if(Erdiko::$_logObject==null)
         {
-            $config = Erdiko::getConfig("application/default");
+            $config = Erdiko::getConfig(ERDIKO_CONTEXT."/application");
             $logFiles = $config["logs"]["files"][0];
             $logDir = $config["logs"]["path"];
 
@@ -149,7 +149,7 @@ class Erdiko
      */
     public static function getCache($cacheType = "default")
     {
-        $config = Erdiko::getConfig("application/default");
+        $config = Erdiko::getConfig(ERDIKO_CONTEXT."/application");
         
         if (isset($config["cache"][$cacheType])) {
             $cacheConfig = $config["cache"][$cacheType];

@@ -17,7 +17,7 @@ class ErdikoTest extends \tests\ErdikoTestCase
          *  First Test
          */
         //Get the config file through getConfigFile function
-        $filename = APPROOT.'/config/'."application/default.json";
+        $filename = APPROOT."/config/default/application.json";
         $return = \Erdiko::getConfigFile($filename);
 
         //Get the config file through file_get_contents function

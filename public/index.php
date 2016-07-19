@@ -1,18 +1,19 @@
 <?php
 /**
  * Index file
- * Intercepts all requests and dispatches routing
+ * Intercepts all requests and dispatch routes
  *
  * @category    Erdiko
  * @package     Public
- * @copyright   Copyright (c) 2014, Arroyo Labs, www.arroyolabs.com
+ * @copyright   Copyright (c) 2016, Arroyo Labs, www.arroyolabs.com
  * @author      John Arroyo
  */
 
 include_once dirname(__DIR__)."/bootstrap.php";
+define('ERDIKO_CONTEXT', 'default'); // switch context for multi-site abilities
 
 try {
-    $routes = Erdiko::getRoutes();
+    $routes = Erdiko::getRoutes(ERDIKO_CONTEXT);
     Toro::serve($routes);
 
 } catch (\Exception $e) {

@@ -25,7 +25,7 @@ class Example extends \erdiko\core\Controller
     {
         /** 
          * Important notes about theming:
-         * Changing your default site wide theme should be done in the application/default.json file
+         * Changing your default site wide theme should be done in the default/application.json file
          *
          * If you want to switch themes in your controller uncomment out this line.
          * $this->setThemeName('my_theme_name');
@@ -280,7 +280,7 @@ class Example extends \erdiko\core\Controller
     public function getAbout()
     {
         $this->setTitle("About");
-        $data = \Erdiko::getConfig("application/default");
+        $data = \Erdiko::getConfig(ERDIKO_CONTEXT."/application");
         
         $this->addView('examples/about', $data);
     }

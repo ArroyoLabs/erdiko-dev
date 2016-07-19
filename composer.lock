@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ArroyoLabs/erdiko-core.git",
-                "reference": "c81562e1880602d7a7af6093a92203e5b821cc6f"
+                "reference": "b5401961c170d1d09d4292c5e97cffe3ac281333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ArroyoLabs/erdiko-core/zipball/c81562e1880602d7a7af6093a92203e5b821cc6f",
-                "reference": "c81562e1880602d7a7af6093a92203e5b821cc6f",
+                "url": "https://api.github.com/repos/ArroyoLabs/erdiko-core/zipball/b5401961c170d1d09d4292c5e97cffe3ac281333",
+                "reference": "b5401961c170d1d09d4292c5e97cffe3ac281333",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "source": "https://github.com/ArroyoLabs/erdiko-core/tree/develop",
                 "issues": "https://github.com/ArroyoLabs/erdiko-core/issues"
             },
-            "time": "2016-05-24 08:11:52"
+            "time": "2016-05-26 05:46:14"
         },
         {
             "name": "erusev/parsedown",
