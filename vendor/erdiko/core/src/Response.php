@@ -65,6 +65,17 @@ class Response
     }
 
     /**
+     * Add a pool of key/values segmented by type
+     * This is useful for js/css includes and other grouped data
+     */
+    public function addTypedKeyValue($type, $key, $value)
+    {
+        if(empty($this->_data[$type]))
+            $this->_data[$type] = array();
+        $this->_data[$type][$key] = $value;
+    }
+
+    /**
      * Set theme
      *
      * @param Theme object $theme - Theme Object (Container)
@@ -209,6 +220,8 @@ class Response
     {
         // Render all objects to html (string)
         $content = (is_object($this->_content)) ? $this->_content->toHtml() : $this->_content;
+
+        echo "<pre>".print_r($this->_data, true)."</pre>";
 
         if ($this->_theme !== null) {
             $this->_theme->setContent($content); // rendered html (body content)

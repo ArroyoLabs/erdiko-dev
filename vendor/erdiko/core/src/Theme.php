@@ -154,6 +154,8 @@ class Theme extends Container
      */
     public function getCss()
     {
+        $css = $this->_extraCss;
+
         if (isset($this->_themeConfig['css'])) {
             return array_merge($this->_themeConfig['css'], $this->_extraCss);
         } else {
@@ -163,14 +165,17 @@ class Theme extends Container
 
     /**
      * Add css file to page
+     * @note there are collisions with using addCss and data['css']
+     * @todo need to resolve order of merging and/or eliminate/refactor this function
      *
      * @param string $cssFile , URL of injected css file
      */
-    public function addCss($cssFile)
+    public function addCss($name, $cssFile, $order = 10, $active = 1)
     {
-        $this->_extraCss[] = array(
+        $this->_extraCss[$name] = array(
             'file' => $cssFile,
-            "active" => 1
+            'order' => $order,
+            'active' => $active
             );
     }
 
@@ -190,14 +195,16 @@ class Theme extends Container
 
     /**
      * Add js file to page
+     * @todo same issue as addCss
      *
      * @param string $jsFile , link to js file
      */
-    public function addJs($jsFile)
+    public function addJs($name, $jsFile, $order = 10, $active = 1)
     {
-        $this->_extraJs[] = array(
+        $this->_extraJs[$name] = array(
             'file' => $jsFile,
-            "active" => 1
+            'order' => $order,
+            'active' => $active
             );
     }
 

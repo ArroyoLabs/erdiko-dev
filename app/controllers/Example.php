@@ -56,6 +56,9 @@ class Example extends \erdiko\core\Controller
         $this->setTitle('Welcome to Erdiko');
         $this->addView('examples/home');
         $this->addMeta("description", "index page");
+
+        $this->addCss('my-css','/css/my-css-file.css');
+        $this->addJs('my-js','/js/my-js-file.js');
     }
 
     /**

@@ -395,10 +395,44 @@ class Controller
 
     public function setMeta($meta)
     {
-        foreach($meta as $term)
-            $this->getResponse()->addMeta($term['name'], $term['content']);
+        foreach($meta as $name => $content)
+            $this->getResponse()->addMeta($name, $content);
     }
 
+    /**
+     * Add Css includes to the page
+     *
+     * @param string $name
+     * @param string $file
+     * @param int $order
+     * @param int $active
+     */
+    public function addCss($name, $file, $order = 10, $active = 1)
+    {
+       $this->getResponse()->addTypedKeyValue('css', $name, array(
+            'file' => $file,
+            'order' => $order,
+            'active' => $active
+            ));
+    }
+
+    /**
+     * Add Css includes to the page
+     *
+     * @param string $name
+     * @param string $file
+     * @param int $order
+     * @param int $active
+     */
+    public function addJs($name, $file, $order = 10, $active = 1)
+    {
+        $this->getResponse()->addTypedKeyValue('js', $name, array(
+            'file' => $file,
+            'order' => $order,
+            'active' => $active
+            ));
+    }
+    
 
 
 
