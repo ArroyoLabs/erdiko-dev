@@ -94,7 +94,7 @@ class Theme extends Container
     {
         $this->_extraMeta[] = array(
             'name' => $name,
-            "content" => $content
+            'content' => $content
             );
     }
 
