@@ -25,6 +25,8 @@ class Response
     protected $_content = null;
     /** Data */
     protected $_data = array();
+    /** Meta data (html header) */
+    protected $_meta = array();
     
     /**
      * Constructor
@@ -77,6 +79,42 @@ class Response
     public function getTheme()
     {
         return $this->_theme;
+    }
+
+    /**
+     * Set Meta
+     * Better to use addMeta since it keeps the structure better
+     *
+     * @param array $metadata
+     */
+    public function setMeta($metadata)
+    {
+        $this->_meta = $metadata;
+    }
+
+    /**
+     * Add meta data tag
+     *
+     * @param string $name, e.g. 'description'
+     * @param string $content, e.g. 'this is a page description'
+     */
+    public function addMeta($name, $content)
+    {
+        $this->_meta[] = array(
+            "name" => $name,
+            "content" => $content
+            );
+    }
+
+    /**
+     * Get meta
+     * Meta tag data
+     *
+     * @return array $meta
+     */
+    public function getMeta()
+    {
+        return $this->_meta;
     }
 
     /**
@@ -174,11 +212,13 @@ class Response
         if ($this->_theme !== null) {
             $this->_theme->setContent($content); // rendered html (body content)
             $this->_theme->setData($this->_data); // data injected from Response/Controller
+            $this->_theme->setExtraMeta($this->getMeta());
             $html = $this->_theme->toHtml();
         } elseif (!empty($this->_themeName)) {
             $this->_theme = new \erdiko\core\Theme($this->_themeName, null, $this->_themeTemplate);
             $this->_theme->setContent($content); // rendered html (body content)
             $this->_theme->setData($this->_data); // data injected from Response/Controller
+            $this->_theme->setExtraMeta($this->getMeta());
             $html = $this->_theme->toHtml();
         } else {
             $html = $content;

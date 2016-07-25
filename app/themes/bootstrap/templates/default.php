@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php
-// Spit out meta tags
-foreach ($this->getMeta() as $meta) {
-    echo '<meta name="'.$meta['name'].'" content="'.$meta['content'].'" >';
-}
+    /** Spit out meta tags **/
+    foreach ($data->getMeta() as $meta)
+        echo "<meta name=\"{$meta['name']}\" content=\"{$meta['content']}\">\n";
 ?>
 
 <title><?php echo $this->getPageTitle() ?></title>

@@ -24,8 +24,6 @@ class Controller
     protected $_webroot;
     /** Theme name */
     protected $_themeName = null;
-    /** Theme */
-    protected $_theme = null;
     /** Request URI */
     protected $_pathInfo = null;
 
@@ -384,12 +382,31 @@ class Controller
         exit;
     }
 
+    /**
+     * Add Meta tags to the page
+     *
+     * @param string $name, html meta name (e.g. 'description' or 'keywords')
+     * @param string $content
+     */
+    public function addMeta($name, $content)
+    {
+        $this->getResponse()->addMeta($name, $content);
+    }
+
+    public function setMeta($meta)
+    {
+        foreach($meta as $term)
+            $this->getResponse()->addMeta($term['name'], $term['content']);
+    }
+
+
+
 
     /**
      *
      *
      * Code below is deprecated, do not use
-     * @todo Should be deleted or moved!
+     * @todo Should be deleted, refactored or moved!
      *
      *
      */
@@ -416,16 +433,5 @@ class Controller
         }
 
         $this->_themeExtras['phpToJs'][$key] = $value;
-    }
-    
-    /**
-     * Add Meta Tags to the page
-     *
-     * @param string $content
-     * @param string $name - html meta name (e.g. 'description' or 'keywords')
-     */
-    public function addMeta($content, $name = 'description')
-    {
-        $this->_themeExtras['meta'][$name] = $content;
     }
 }

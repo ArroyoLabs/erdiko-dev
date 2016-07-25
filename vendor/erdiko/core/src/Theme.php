@@ -99,6 +99,16 @@ class Theme extends Container
     }
 
     /**
+     * Add meta file to page
+     *
+     * @param array $metadata, format: array("name" => "name", "content" => "content")
+     */
+    public function setExtraMeta($metadata)
+    {
+        $this->_extraMeta = $metadata;
+    }
+
+    /**
      *  Get page title
      *
      *  @return string $page_title
