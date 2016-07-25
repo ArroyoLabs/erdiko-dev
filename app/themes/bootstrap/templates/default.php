@@ -7,7 +7,6 @@
 
 <?php
     /** Spit out meta tags **/
-    // echo "<pre>".print_r($this, true)."</pre>";
     foreach ($this->getMeta() as $name => $content)
         echo "<meta name=\"{$name}\" content=\"{$content}\">\n";
 ?>
