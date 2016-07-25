@@ -55,7 +55,7 @@ class Example extends \erdiko\core\Controller
         // Add page data
         $this->setTitle('Welcome to Erdiko');
         $this->addView('examples/home');
-        // $this->addMeta("description", "index page");
+        $this->addMeta("description", "index page");
     }
 
     /**

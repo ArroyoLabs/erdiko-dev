@@ -26,7 +26,11 @@ class Response
     /** Data */
     protected $_data = array();
     /** Meta data (html header) */
-    protected $_meta = array();
+    protected $_themeData = array(
+        'js' =>array(), 
+        'css' => array(), 
+        'meta' => array()
+        );
     
     /**
      * Constructor
@@ -89,7 +93,7 @@ class Response
      */
     public function setMeta($metadata)
     {
-        $this->_meta = $metadata;
+        $this->_themeData['meta'] = $metadata;
     }
 
     /**
@@ -100,10 +104,7 @@ class Response
      */
     public function addMeta($name, $content)
     {
-        $this->_meta[] = array(
-            "name" => $name,
-            "content" => $content
-            );
+        $this->_themeData['meta'][$name] = $content;
     }
 
     /**
@@ -114,7 +115,7 @@ class Response
      */
     public function getMeta()
     {
-        return $this->_meta;
+        return $this->_themeData['meta'];
     }
 
     /**
@@ -230,7 +231,8 @@ class Response
     /**
      * Render and send data to browser then end request
      *
-     * @notice USE WITH CAUTION
+     * @notice USE WITH CAUTION, 
+     *  This should be called at the end of processing the response
      */
     public function send()
     {

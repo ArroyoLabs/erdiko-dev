@@ -20,8 +20,12 @@ class Theme extends Container
     protected $_themeRootFolder;
     /** Name */
     protected $_name = null;
-    /** Config */
-    protected $_config = null;
+    /** Context */
+    protected $_context = null;
+    /** Context Config (application config) */
+    protected $_contextConfig = null;
+    /** Theme Config */
+    protected $_themeConfig = null;
     /** Content */
     protected $_content = null;
     /** Extra css array */
@@ -35,30 +39,49 @@ class Theme extends Container
     /**
      * Constructor
      *
-     * @param string $name
+     * @param string $themeName
      * @param mixed $data
      * @param string $template , Theme Object (Contaier)
+     * @param string $context, theme against a context (defaults to context in environment)
      */
-    public function __construct($themeName = 'default', $data = null, $template = 'default')
+    public function __construct($themeName = 'default', $data = null, 
+        $template = 'default', $context = null)
     {
-        // $template = ($template === null) ? $this->_defaultTemplate : $template;
         $this->initiate($template, $data);
         $this->setThemeRootFolder('themes');
         $this->setName($themeName);
+
+        // Context can only be set at instantiation (for theme stability)
+        $this->_context = ($context === null) ? getenv('ERDIKO_CONTEXT') : $context;
     }
 
     /**
-     * Get configuration
+     * Get context config
+     * This is the application config for the given context (e.g. default site)
+     * Context is determined by environment variable ERDIKO_CONTEXT, getenv('ERDIKO_CONTEXT')
+     *
+     * @return array $config, application config
+     */
+    public function getContextConfig()
+    {
+        if (empty($this->_contextConfig))
+            $this->_contextConfig = Erdiko::getConfig('application', $this->_context);
+        
+        return $this->_contextConfig;
+    }
+
+    /**
+     * Get Theme configuration (default theme)
      *
      * @return string
      */
-    public function getConfig()
+    public function getThemeConfig()
     {
-        if (empty($this->config)) {
+        if (empty($this->_themeConfig)) {
             $file = $this->getThemeFolder() . 'theme.json';
-            $this->_config = Erdiko::getConfigFile($file);
+            $this->_themeConfig = Erdiko::getConfigFile($file);
         }
-        return $this->_config;
+        return $this->_themeConfig;
     }
 
     /**
@@ -68,20 +91,11 @@ class Theme extends Container
      */
     public function getMeta()
     {
-        //return array_merge($this->_data['meta'], $this->_extraMeta);
-        
-        if (isset($this->_data['meta'])) {
-            return array_merge($this->_data['meta'], $this->_extraMeta);
+        if (isset($this->_contextConfig['site']['meta'])) {
+            return array_merge($this->_contextConfig['site']['meta'], $this->_extraMeta);
         } else {
             return $this->_extraMeta;
         }
-
-        /*
-        if(isset($this->_data['meta']))
-            return $this->_data['meta'];
-        else 
-            return array();
-        */
     }
 
     /**
@@ -92,10 +106,7 @@ class Theme extends Container
      */
     public function addMeta($name, $content)
     {
-        $this->_extraMeta[] = array(
-            'name' => $name,
-            'content' => $content
-            );
+        $this->_extraMeta[$name] = $content;
     }
 
     /**
@@ -143,8 +154,8 @@ class Theme extends Container
      */
     public function getCss()
     {
-        if (isset($this->_config['css'])) {
-            return array_merge($this->_config['css'], $this->_extraCss);
+        if (isset($this->_themeConfig['css'])) {
+            return array_merge($this->_themeConfig['css'], $this->_extraCss);
         } else {
             return $this->_extraCss;
         }
@@ -170,8 +181,8 @@ class Theme extends Container
      */
     public function getJs()
     {
-        if (isset($this->_config['js'])) {
-            return array_merge($this->_config['js'], $this->_extraJs);
+        if (isset($this->_themeConfig['js'])) {
+            return array_merge($this->_themeConfig['js'], $this->_extraJs);
         } else {
             return $this->_extraJs;
         }
@@ -280,25 +291,13 @@ class Theme extends Container
      * @param string $context
      * @return string $html
      */
-    public function getTemplateHtml($partial, $context = 'default')
+    public function getTemplateHtml($partial)
     {
-        $config = $this->getConfig();
+        $config = $this->getThemeConfig();
         $filename = $this->getTemplateFolder().$config['templates'][$partial]['file'];
-        $html = $this->getTemplateFile($filename, $this->getContextConfig($context));
+        $html = $this->getTemplateFile($filename, $this->getContextConfig());
         
         return $html;
-    }
-
-    /**
-     * Get context config
-     * This is the application config for the given context (e.g. default site)
-     *
-     * @param string $context
-     * @return array $config, application config
-     */
-    public function getContextConfig($context = 'default')
-    {
-        return Erdiko::getConfig('application', $context);
     }
 
     /**
@@ -310,7 +309,10 @@ class Theme extends Container
      */
     public function toHtml()
     {
-        $this->getConfig(); // load the site config
+        // load the theme and context (site) configs
+        $this->getContextConfig();
+        $this->getThemeConfig();
+
         $filename = $this->getTemplateFolder().$this->getTemplate();
         $html = $this->getTemplateFile($filename, $this);
         
