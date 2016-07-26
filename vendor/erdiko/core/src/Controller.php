@@ -25,7 +25,9 @@ class Controller
     protected $_themeName = null;
     /** Request URI */
     protected $_pathInfo = null;
-
+    /** Title (body title) */
+    protected $_title = null;
+    
     /**
      * Constructor
      */
@@ -239,6 +241,7 @@ class Controller
     public function setBodyTitle($title)
     {
         $this->getResponse()->getTheme()->setBodyTitle($title);
+        $this->_title = $title;
     }
 
     /**
@@ -257,8 +260,17 @@ class Controller
      */
     public function setTitle($title)
     {
-        $this->setPageTitle($title);
         $this->setBodyTitle($title);
+        $this->setPageTitle($title);
+    }
+
+    /**
+     * Set both the title (header) and page title (body) at the same time
+     * @param string $title
+     */
+    public function getTitle()
+    {
+        return $this->_title;
     }
 
     /**
@@ -335,7 +347,7 @@ class Controller
             $view->setTemplateRootFolder($templateRootFolder);
         }
 
-        return  $view->toHtml();
+        return $view;
     }
 
     /**

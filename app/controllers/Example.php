@@ -56,13 +56,41 @@ class Example extends \erdiko\core\Controller
         $this->setTitle('Welcome to Erdiko');
         $this->addView('examples/home');
         $this->addMeta("description", "index page meta description");
-
-        $this->addCss('my-css','/css/my-css-file.css');
-        $this->addJs('my-js','/js/my-js-file.js');
     }
 
     /**
-     * Homepage Action (index)
+     * Advanced Action 
+     */
+    public function getAdvanced()
+    {
+        // Add page data
+        $this->setTitle('Advanced use cases');
+        $this->addMeta("description", "Advanced use cases and examples");
+
+        // Add additional js and css files
+        $this->addCss('my-css','/css/my-css-file.css');
+        $this->addJs('my-js','/js/my-js-file.js');
+
+        // Add additional fields to the theme
+        $this->getResponse()->getTheme()->custom_var = "Booyah";
+        echo $this->getResponse()->getTheme()->custom_var;
+
+        // Add additional fields to the view
+        $this->getResponse()->getTheme()->custom_var = "Booyah";
+        echo $this->getResponse()->getTheme()->custom_var;
+
+        // Get a view object
+        $view = $this->getView('examples/advanced');
+
+        // Add a field to the view that can be used directly in the view
+        $view->title = $this->getTitle();
+
+        // Add the view to the content
+        $this->setContent($view);
+    }
+
+    /**
+     * Examples Action
      */
     public function getExamples()
     {
@@ -76,7 +104,11 @@ class Example extends \erdiko\core\Controller
      */
     public function getBaseline()
     {
-        $this->setContent("<p>The simplest page possible</p>");
+        // Entering raw text on the page
+        $this->setContent("
+            <div class=\"container\"><p>
+            This is the simplest page possible.</p>
+            </div>");
     }
 
     /**
@@ -127,6 +159,7 @@ class Example extends \erdiko\core\Controller
 
     /**
      * Get view2
+     * Another way to inject views into a layout
      */
     public function getSetview2()
     {
@@ -153,7 +186,9 @@ class Example extends \erdiko\core\Controller
         $this->addView('examples/carousel');
 
         // Inject the carousel js code
-        $this->getResponse()->getTheme()->addJs('/themes/bootstrap/js/carousel.js');
+        $this->getResponse()
+            ->getTheme()
+            ->addJs('carousel', '/themes/bootstrap/js/carousel.js');
     }
 
     /**

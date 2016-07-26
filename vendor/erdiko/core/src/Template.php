@@ -154,6 +154,27 @@ trait Template
         throw new \Exception("Template file does not exist ({$filename})");
     }
 
+    public function __set($key, $value)
+    {
+        // Capitalize first letter of the key to preserve camel case convention naming
+        $method = 'set'.ucfirst($key);
+        if(is_callable(array($this, $method))) {
+            $this->$method($value); // Execute the native setter function
+        } else {
+            $this->_data[$key] = $value;
+        }
+    }
+
+    public function __get($key)
+    {
+        $value = null;
+
+        if(array_key_exists($key, $this->_data))
+            $value = $this->_data[$key];
+
+        return $value;
+    }
+
     /**
      * Render container to HTML
      *

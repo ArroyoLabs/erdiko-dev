@@ -13,6 +13,7 @@ use Erdiko;
 
 /**
  * Theme class
+ * Note the data array in this class uses a sort of NOSQL style approach to the theming
  */
 class Theme extends Container
 {
@@ -28,12 +29,6 @@ class Theme extends Container
     protected $_themeConfig = null;
     /** Content */
     protected $_content = null;
-    /** Extra css array */
-    protected $_extraCss = array();
-    /** Extra javascript array */
-    protected $_extraJs = array();
-    /** Extra Meta array */
-    protected $_extraMeta = array();
 
     /**
      * Constructor
@@ -96,9 +91,9 @@ class Theme extends Container
     public function getMeta()
     {
         if (isset($this->_contextConfig['site']['meta'])) {
-            return array_merge($this->_contextConfig['site']['meta'], $this->_extraMeta);
+            return array_merge($this->_contextConfig['site']['meta'],$this->_data['meta']);
         } else {
-            return $this->_extraMeta;
+            return $this->_data['meta'];
         }
     }
 
@@ -175,13 +170,14 @@ class Theme extends Container
      * Get array of css files to include in theme
      *
      * @return array $css
+     * @todo sort by the 'order' value
      */
     public function getCss()
     {
         if (isset($this->_themeConfig['css'])) {
-            return array_merge($this->_themeConfig['css'], $this->_extraCss);
+            return array_merge($this->_themeConfig['css'], $this->_data['css']);
         } else {
-            return $this->_extraCss;
+            return $this->_data['css'];
         }
     }
 
@@ -194,7 +190,7 @@ class Theme extends Container
      */
     public function addCss($name, $cssFile, $order = 10, $active = 1)
     {
-        $this->_extraCss[$name] = array(
+       $this->_data['css'][$name] = array(
             'file' => $cssFile,
             'order' => $order,
             'active' => $active
@@ -205,13 +201,14 @@ class Theme extends Container
      * Get array of js files to include
      *
      * @return array $js
+     * @todo sort by the 'order' value
      */
     public function getJs()
     {
         if (isset($this->_themeConfig['js'])) {
-            return array_merge($this->_themeConfig['js'], $this->_extraJs);
+            return array_merge($this->_themeConfig['js'], $this->_data['js']);
         } else {
-            return $this->_extraJs;
+            return $this->_data['js'];
         }
     }
 
@@ -223,7 +220,7 @@ class Theme extends Container
      */
     public function addJs($name, $jsFile, $order = 10, $active = 1)
     {
-        $this->_extraJs[$name] = array(
+        $this->_data['js'][$name] = array(
             'file' => $jsFile,
             'order' => $order,
             'active' => $active
