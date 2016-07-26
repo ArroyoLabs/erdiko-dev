@@ -11,7 +11,6 @@
  */
 namespace erdiko\core;
 
-use Erdiko;
 
 /**
  * Controller Class
@@ -207,9 +206,9 @@ class Controller
      * @param string $key
      * @param mixed $value
      */
-    public function setResponseDataValue($key, $value)
+    public function setResponseKeyValue($key, $value)
     {
-        $this->getResponse()->setDataValue($key, $value);
+        $this->getResponse()->setKeyValue($key, $value);
     }
 
     /**
@@ -217,9 +216,9 @@ class Controller
      *
      * @param string $key
      */
-    public function getResponseDataValue($key)
+    public function getResponseKeyValue($key)
     {
-        return $this->getResponse()->getDataValue($key);
+        return $this->getResponse()->getKeyValue($key);
     }
 
     /**
@@ -229,7 +228,7 @@ class Controller
      */
     public function setPageTitle($title)
     {
-        $this->setResponseDataValue('page_title', $title);
+        $this->getResponse()->getTheme()->setPageTitle($title);
     }
 
     /**
@@ -239,7 +238,7 @@ class Controller
      */
     public function setBodyTitle($title)
     {
-        $this->setResponseDataValue('body_title', $title);
+        $this->getResponse()->getTheme()->setBodyTitle($title);
     }
 
     /**
@@ -249,7 +248,7 @@ class Controller
      */
     public function getBodyTitle()
     {
-        return $this->getResponseDataValue('body_title');
+        return $this->getResponse()->getTheme()->getBodyTitle();
     }
 
     /**
@@ -390,13 +389,17 @@ class Controller
      */
     public function addMeta($name, $content)
     {
-        $this->getResponse()->addMeta($name, $content);
+        $this->getResponse()->getTheme()->addMeta($name, $content);
     }
 
+    /**
+     * Set multiple meta fields at once
+     * @param array $meta
+     */
     public function setMeta($meta)
     {
         foreach($meta as $name => $content)
-            $this->getResponse()->addMeta($name, $content);
+            $this->getResponse()->getTheme()->addMeta($name, $content);
     }
 
     /**
@@ -409,11 +412,9 @@ class Controller
      */
     public function addCss($name, $file, $order = 10, $active = 1)
     {
-       $this->getResponse()->addTypedKeyValue('css', $name, array(
-            'file' => $file,
-            'order' => $order,
-            'active' => $active
-            ));
+       $this->getResponse()
+            ->getTheme()
+            ->addCss($name, $file, $order,$active);
     }
 
     /**
@@ -426,11 +427,9 @@ class Controller
      */
     public function addJs($name, $file, $order = 10, $active = 1)
     {
-        $this->getResponse()->addTypedKeyValue('js', $name, array(
-            'file' => $file,
-            'order' => $order,
-            'active' => $active
-            ));
+        $this->getResponse()
+            ->getTheme()
+            ->addJs($name, $file, $order,$active);
     }
     
 

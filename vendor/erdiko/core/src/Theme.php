@@ -35,7 +35,6 @@ class Theme extends Container
     /** Extra Meta array */
     protected $_extraMeta = array();
 
-
     /**
      * Constructor
      *
@@ -50,6 +49,11 @@ class Theme extends Container
         $this->initiate($template, $data);
         $this->setThemeRootFolder('themes');
         $this->setName($themeName);
+        $this->_data = array(
+            'js' =>array(),
+            'css' => array(),
+            'meta' => array()
+            );
 
         // Context can only be set at instantiation (for theme stability)
         $this->_context = ($context === null) ? getenv('ERDIKO_CONTEXT') : $context;
@@ -106,17 +110,17 @@ class Theme extends Container
      */
     public function addMeta($name, $content)
     {
-        $this->_extraMeta[$name] = $content;
+        $this->_data['meta'][$name] = $content;
     }
 
     /**
-     * Add meta file to page
+     * Add meta tag data to page
      *
-     * @param array $metadata, format: array("name" => "name", "content" => "content")
+     * @param array $meta, format: array("name" => "content", "author" => "content", ...)
      */
-    public function setExtraMeta($metadata)
+    public function setMeta($meta)
     {
-        $this->_extraMeta = $metadata;
+        $this->_data['meta'] = $meta;
     }
 
     /**
@@ -134,7 +138,17 @@ class Theme extends Container
     }
 
     /**
-     * Get boby title
+     *  Set page title
+     *
+     *  @param string $page_title
+     */
+    public function setPageTitle($title)
+    {
+        $this->_data['page_title'] = $title;
+    }
+
+    /**
+     * Get body title
      *
      *  @return string $body_title
      */
@@ -148,14 +162,22 @@ class Theme extends Container
     }
 
     /**
+     *  Set body title
+     *
+     *  @param string $page_title
+     */
+    public function setBodyTitle($title)
+    {
+        $this->_data['body_title'] = $title;
+    }
+
+    /**
      * Get array of css files to include in theme
      *
      * @return array $css
      */
     public function getCss()
     {
-        $css = $this->_extraCss;
-
         if (isset($this->_themeConfig['css'])) {
             return array_merge($this->_themeConfig['css'], $this->_extraCss);
         } else {

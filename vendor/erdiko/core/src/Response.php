@@ -10,27 +10,22 @@
  */
 namespace erdiko\core;
 
-use Erdiko;
 
 /** Response Class */
 class Response
 {
     /** Theme object */
-    protected $_theme;
+    protected $_theme = null;
     /** Theme name */
     protected $_themeName;
     /** Theme template */
     protected $_themeTemplate = 'default';
+    /** Theme Ignore (if set to true output is rendered without theme) */
+    protected $_themeIgnore = false;    
     /** Content */
     protected $_content = null;
     /** Data */
     protected $_data = array();
-    /** Meta data (html header) */
-    protected $_themeData = array(
-        'js' =>array(), 
-        'css' => array(), 
-        'meta' => array()
-        );
     
     /**
      * Constructor
@@ -43,23 +38,23 @@ class Response
     }
 
     /**
-     * Set data value
+     * Set key value data
      *
      * @param mixed $key
      * @param mixed $value
      */
-    public function setDataValue($key, $value)
+    public function setKeyValue($key, $value)
     {
         $this->_data[$key] = $value;
     }
 
     /**
-     * Get data value
+     * Get data value by key
      *
      * @param mixed $key
      * @return mixed
      */
-    public function getDataValue($key)
+    public function getKeyValue($key)
     {
         return empty($this->_data[$key]) ? null: $this->_data[$key];
     }
@@ -88,45 +83,14 @@ class Response
     /**
      * Get theme
      *
-     * @return Theme
-     * @todo generate a Theme object if $this->_theme is null
+     * @return Theme Object $theme
      */
     public function getTheme()
     {
+        if($this->_theme === null)
+            $this->_theme = new \erdiko\core\Theme($this->getThemeName(), null, $this->getThemeTemplate());
+
         return $this->_theme;
-    }
-
-    /**
-     * Set Meta
-     * Better to use addMeta since it keeps the structure better
-     *
-     * @param array $metadata
-     */
-    public function setMeta($metadata)
-    {
-        $this->_themeData['meta'] = $metadata;
-    }
-
-    /**
-     * Add meta data tag
-     *
-     * @param string $name, e.g. 'description'
-     * @param string $content, e.g. 'this is a page description'
-     */
-    public function addMeta($name, $content)
-    {
-        $this->_themeData['meta'][$name] = $content;
-    }
-
-    /**
-     * Get meta
-     * Meta tag data
-     *
-     * @return array $meta
-     */
-    public function getMeta()
-    {
-        return $this->_themeData['meta'];
     }
 
     /**
@@ -219,23 +183,12 @@ class Response
     public function render()
     {
         // Render all objects to html (string)
-        $content = (is_object($this->_content)) ? $this->_content->toHtml() : $this->_content;
+        $html = (string) $this->_content;
 
-        echo "<pre>".print_r($this->_data, true)."</pre>";
-
-        if ($this->_theme !== null) {
-            $this->_theme->setContent($content); // rendered html (body content)
-            $this->_theme->setData($this->_data); // data injected from Response/Controller
-            $this->_theme->setExtraMeta($this->getMeta());
-            $html = $this->_theme->toHtml();
-        } elseif (!empty($this->_themeName)) {
-            $this->_theme = new \erdiko\core\Theme($this->_themeName, null, $this->_themeTemplate);
-            $this->_theme->setContent($content); // rendered html (body content)
-            $this->_theme->setData($this->_data); // data injected from Response/Controller
-            $this->_theme->setExtraMeta($this->getMeta());
-            $html = $this->_theme->toHtml();
-        } else {
-            $html = $content;
+        if (!$this->_themeIgnore) {
+            $theme = $this->getTheme();
+            $theme->setContent($html); // rendered html (body content)
+            $html = (string) $theme;
         }
 
         return $html;

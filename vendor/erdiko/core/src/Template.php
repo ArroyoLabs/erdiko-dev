@@ -166,4 +166,13 @@ trait Template
 
         return $this->getTemplateFile($filename, $data);
     }
+
+    /** 
+     * toString magic method
+     * When casting to a string use the toHtml method to determine how to render
+     */
+    public function __toString()
+    {
+        return $this->toHtml();
+    }
 }

@@ -55,7 +55,7 @@ class Example extends \erdiko\core\Controller
         // Add page data
         $this->setTitle('Welcome to Erdiko');
         $this->addView('examples/home');
-        $this->addMeta("description", "index page");
+        $this->addMeta("description", "index page meta description");
 
         $this->addCss('my-css','/css/my-css-file.css');
         $this->addJs('my-js','/js/my-js-file.js');
@@ -289,7 +289,7 @@ class Example extends \erdiko\core\Controller
     public function getAbout()
     {
         $this->setTitle("About");
-        $data = \Erdiko::getConfig(ERDIKO_CONTEXT."/application");
+        $data = \Erdiko::getConfig("application", getenv('ERDIKO_CONTEXT'));
         
         $this->addView('examples/about', $data);
     }
