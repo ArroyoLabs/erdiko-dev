@@ -116,7 +116,7 @@ class Response
         elseif(!empty($this->_theme))
             $name = $this->_theme->getName();
         else
-            $name = \Erdiko::getConfig()['theme']['name'];
+            $name = Helper::getConfig()['theme']['name'];
         
         return $name;
     }

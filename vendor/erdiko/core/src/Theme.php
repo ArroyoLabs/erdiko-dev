@@ -9,7 +9,6 @@
  */
 namespace erdiko\core;
 
-use Erdiko;
 
 /**
  * Theme class
@@ -64,7 +63,7 @@ class Theme extends Container
     public function getContextConfig()
     {
         if (empty($this->_contextConfig))
-            $this->_contextConfig = Erdiko::getConfig('application', $this->_context);
+            $this->_contextConfig = Helper::getConfig('application', $this->_context);
         
         return $this->_contextConfig;
     }
@@ -78,7 +77,7 @@ class Theme extends Container
     {
         if (empty($this->_themeConfig)) {
             $file = $this->getThemeFolder() . 'theme.json';
-            $this->_themeConfig = Erdiko::getConfigFile($file);
+            $this->_themeConfig = Helper::getConfigFile($file);
         }
         return $this->_themeConfig;
     }
