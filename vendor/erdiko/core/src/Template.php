@@ -125,6 +125,13 @@ trait Template
         $this->_templateFolder = $templateFolder;
     }
 
+    public function renderMustache($filename, $data)
+    {
+        $file = file_get_contents($filename.'.html');
+        $m = new \Mustache_Engine;
+        return $m->render($file, $data);
+    }
+
     /**
      * Get rendered template file
      * Accepts one of the types of template files in this order:
@@ -142,12 +149,10 @@ trait Template
             return ob_get_clean();
 
         } elseif (is_file($filename.'.html')) {
-            $file = file_get_contents($filename.'.html');
-            $m = new \Mustache_Engine;
-            return $m->render($file, $data);
+            return $this->renderMustache($filename, $data);
 
         } elseif (is_file($filename.'.md')) {
-            $parsedown = new \Parsedown();
+            $parsedown = new \Parsedown;
             return $parsedown->text(file_get_contents($filename.'.md'));
         }
 

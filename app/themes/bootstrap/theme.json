@@ -4,14 +4,6 @@
     "credits": "John Arroyo",
     "namespace": "/app/themes/bootstrap",
     "public": "/public/themes/bootstrap",
-    "rules": {
-        "header": {
-            "condition": {
-                "route": "/"
-            },
-            "view": "slideshow"
-        }
-    },
     "css": {
         "default":{
             "file": "/themes/bootstrap/css/styles.min.css",
