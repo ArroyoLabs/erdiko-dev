@@ -115,11 +115,11 @@ class Helper
         if(self::$_logObject==null)
         {
             $erdikoContext = getenv('ERDIKO_CONTEXT');
-            $config = self::getConfig("{$erdikoContext}/application");
+            $config = self::getConfig("application", $erdikoContext);
             $logFiles = $config["logs"]["files"][0];
             $logDir = $config["logs"]["path"];
 
-            self::$_logObject = new erdiko\core\Logger($logFiles, $logDir);
+            self::$_logObject = new \erdiko\core\Logger($logFiles, $logDir);
         }
 
         if(empty($level))

@@ -32,8 +32,10 @@ ToroHook::add("404", function ($vars = array()) {
 
     // For a themed 404 page...
     $theme = new \erdiko\core\Theme('bootstrap');
-    $theme->addCss('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
-    $theme->addCss('/themes/bootstrap/css/font-awesome-animation.css');
+    $theme->addCss('font-awesome', 
+        '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+    $theme->addCss('font-awesome-animation',
+        '/themes/bootstrap/css/font-awesome-animation.css');
 
     $response = new \erdiko\core\Response($theme);
     $response->setContent(\Erdiko::getView('404', $vars));
