@@ -1,16 +1,24 @@
 version: '2'
 
 services:
-  apache:
-    container_name: erdiko_web
-    build:
-      context: .
-      args:
-        folder: ./apache
+  webserver:
+    container_name: erdiko_nginx
+    image: nginx:latest
     env_file: environment.env
-    image: erdiko_lamp
     volumes:
-      - ../:/var/www/code
+      - ../:/code
+      - ./nginx/site.conf:/etc/nginx/conf.d/site.conf
+      - ./nginx/fastcgi.conf:/etc/nginx/fastcgi.conf
     ports:
       - "8088:80"
-      - "448:443"
+  php:
+    container_name: erdiko_php7
+    env_file: environment.env
+    image: erdiko_php7fpm
+    build:
+      context: ./php7
+    volumes:
+      - ../:/code
+      - ./php7/conf.d:/usr/local/etc/php/conf.d
+    ports:
+      - "9000:9000"
