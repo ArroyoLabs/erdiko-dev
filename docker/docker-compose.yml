@@ -7,7 +7,7 @@ services:
     env_file: environment.env
     volumes:
       - ../:/code
-      - ./nginx/site.conf:/etc/nginx/conf.d/site.conf
+      - ./nginx/site-multisite.conf:/etc/nginx/conf.d/site.conf
       - ./nginx/fastcgi.conf:/etc/nginx/fastcgi.conf
     ports:
       - "8088:80"
