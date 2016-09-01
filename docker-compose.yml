@@ -6,9 +6,9 @@ services:
     image: nginx:latest
     env_file: environment.env
     volumes:
-      - ../:/code
-      - ./nginx/site-multisite.conf:/etc/nginx/conf.d/site.conf
-      - ./nginx/fastcgi.conf:/etc/nginx/fastcgi.conf
+      - .:/code
+      - ./docker/nginx/site-multisite.conf:/etc/nginx/conf.d/site.conf
+      - ./docker/nginx/fastcgi.conf:/etc/nginx/fastcgi.conf
     ports:
       - "8088:80"
   php:
@@ -16,9 +16,7 @@ services:
     env_file: environment.env
     image: erdiko_php7fpm
     build:
-      context: ./php7
+      context: ./docker/php7
     volumes:
-      - ../:/code
-      - ./php7/conf.d:/usr/local/etc/php/conf.d
-    ports:
-      - "9000:9000"
+      - .:/code
+      - ./docker/php7/conf.d:/usr/local/etc/php/conf.d
