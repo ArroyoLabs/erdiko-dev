@@ -5,7 +5,7 @@ Erdiko
 
 **Erdiko is Enterprise Glue**
 
-Erdiko is an MVC micro framework or better yet, an enterprise framework for APIs, lean front-ends and mash-ups.
+Erdiko is a micro MVC framework or better yet, an enterprise framework for APIs, lean front-ends and mash-ups.
 
 Get work done without the bloat!
 
@@ -15,15 +15,13 @@ http://erdiko.org/
 Installation
 ------------
 
-***via composer***
+We recommend installing using composer.  At the commandline run,
 
-at the commandline run,
-
-	composer create erdiko/erdiko
+	composer create erdiko/erdiko [your-app-name]
 
 ***via git & composer***
 
-Clone erdiko from github and run "composer install" in the root folder /
+If you prefer to install yourself you can clone erdiko from github and run "composer install" in the root folder.
 
 1. git clone git@github.com:ArroyoLabs/erdiko.git
 2. cd erdiko
@@ -33,9 +31,12 @@ Clone erdiko from github and run "composer install" in the root folder /
 
 Now that you have the latest code, set up an apache vhost to the webroot which is located at /public/
 
-In general, files that are downloaded in the browser go in the /public folder while application code goes in the /app folder.  Erdiko core code is in the /vendor/erdiko/ folder.
+In general, files that are downloaded in the browser go in the /public folder while application code goes in the /app folder.  Erdiko packages are located in the /vendor/erdiko/ folder.
 
-***Docker***
+
+Docker
+------
+
 If you want to run your new site using docker use our bundled container scripts by running docker-compose in the docker folder.
 
 	cd docker
@@ -69,36 +70,23 @@ Notes
 We value feedback and would love to hear your thoughts about the architecture and ease of use of this framework.  There are a lot of possibilities for Erdiko, we value your ideas and thoughts about where to take this codebase.
 
 
+Upgrades
+--------
+
+If you are upgrading from version 0.9.0 or earier than you need to adjust the configs in app/config folder.  The structure has changed slightly.  Move app/config/application/default.json to app/config/default/application.json and app/config/application/routes.json to app/config/default/routes.json.  Take a look at the latest configs in this repo and make sure they adhere to the new structure.
+
+
 Team
 ----
 
-**Active Contributors**
+**Primary Contributors**
 
-    * John Arroyo
+    * John Arroyo (Lead)
     * Andy Armstrong
     * Leo Daidone
 
-**Past Contributors**
-
-    * Fangxiang Wang
-    * Coleman Tung
-    * Varun Brahme
-    * Dave LaFLam
-
 * If you want to help, please do, we'd love more brains and clever code!  Make your enhancements and do a pull request.  If you want to get to even more involved please contact us!
 
+**Who is behind Erdiko?**
 
-Roadmap
--------
-
-Coming Soon...
-
-
-Special Thanks
---------------
-
-Arroyo Labs - For sponsoring development, [http://arroyolabs.com](http://arroyolabs.com)
-
-Toro - PHP router (micro framework), http://toroweb.org
-
-LESS - dynamic stylesheet language, http://lesscss.org
+Erdiko was created by [Arroyo Labs](http://arroyolabs.com)

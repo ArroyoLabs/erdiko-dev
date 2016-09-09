@@ -4,10 +4,10 @@
  * You shouldn't have to change anything here unless you are 
  * hacking together something unique
  */
-define('ROOT', dirname(__DIR__));
-define('VENDOR', ROOT.'/vendor');
-define('ERDIKO', VENDOR.'/erdiko/core/src');
-require_once ERDIKO.'/bootstrap.php';
+define('ERDIKO_ROOT', dirname(__DIR__));
+define('ERDIKO_VENDOR', ERDIKO_ROOT.'/vendor');
+define('ERDIKO_SRC', ERDIKO_VENDOR.'/erdiko/core/src');
+require_once ERDIKO_SRC.'/bootstrap.php';
 
 /**
  * Appstrap

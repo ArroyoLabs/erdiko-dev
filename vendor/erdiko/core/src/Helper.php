@@ -67,7 +67,7 @@ class Helper
         if($context == null)
             $context = getenv('ERDIKO_CONTEXT');
 
-        $filename = APPROOT."/config/{$context}/{$name}.json";
+        $filename = ERDIKO_APP."/config/{$context}/{$name}.json";
         return self::getConfigFile($filename);
     }
     
@@ -80,7 +80,7 @@ class Helper
     {
         if($context == null)
             $context = getenv('ERDIKO_CONTEXT');
-        $file = APPROOT."/config/{$context}/routes.json";
+        $file = ERDIKO_APP."/config/{$context}/routes.json";
         $applicationConfig = self::getConfigFile($file);
         
         return $applicationConfig['routes'];

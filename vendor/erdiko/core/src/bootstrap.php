@@ -1,18 +1,18 @@
 <?php
-define('WEBROOT', ROOT.'/public');
-define('APPROOT', ROOT.'/app');
-define('VARROOT', ROOT.'/var');
-define('VIEWS', APPROOT.'/views/');
+define('ERDIKO_PUBLIC', ERDIKO_ROOT.'/public');
+define('ERDIKO_APP', ERDIKO_ROOT.'/app');
+define('ERDIKO_VAR', ERDIKO_ROOT.'/var');
+define('ERDIKO_VIEWS', APPROOT.'/views/');
 
 // Composer
-require_once VENDOR.'/autoload.php';
+require_once ERDIKO_VENDOR.'/autoload.php';
 
 // Core
-require_once ERDIKO.'/Toro.php';
-require_once ERDIKO.'/autoload.php'; // auto loading for the app
+require_once ERDIKO_SRC.'/Toro.php';
+require_once ERDIKO_SRC.'/autoload.php'; // auto loading for the app
 
 // Core framework functions (static functions)
-require_once ROOT.'/Erdiko.php';
+require_once ERDIKO_ROOT.'/Erdiko.php'; // @note do we need this?
 
 // Set a default context if none specified
 if(empty(getenv('ERDIKO_CONTEXT')))
