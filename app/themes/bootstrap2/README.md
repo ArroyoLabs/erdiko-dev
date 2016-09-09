@@ -17,7 +17,7 @@ On a mac you can use homebrew
 `npm install`
 
 #3 install gulp
-`npm install --global gulp-cli`
+`npm install --global gulp gulp-cli`
 Check out more details at https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 
 #4 run gulp (compile theme)
