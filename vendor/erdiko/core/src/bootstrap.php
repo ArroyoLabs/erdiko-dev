@@ -12,7 +12,7 @@ require_once ERDIKO_SRC.'/Toro.php';
 require_once ERDIKO_SRC.'/autoload.php'; // auto loading for the app
 
 // Core framework functions (static functions)
-require_once ERDIKO_ROOT.'/Erdiko.php'; // @note do we need this?
+require_once ERDIKO_ROOT.'/Erdiko.php';
 
 // Set a default context if none specified
 if(empty(getenv('ERDIKO_CONTEXT')))
