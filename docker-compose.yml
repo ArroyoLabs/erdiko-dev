@@ -1,12 +1,18 @@
 version: '2'
 
 services:
+  data:
+    image: busybox
+    volumes:
+      - .:/erdiko
+      - ../erdiko-core:/erdiko-core
+      - ../erdiko-wordpress:/erdiko-wordpress  
   webserver:
     container_name: erdiko_nginx
     image: nginx:latest
     env_file: environment.env
+    volumes_from: [data]
     volumes:
-      - .:/code
       - ./docker/nginx/site-multisite.conf:/etc/nginx/conf.d/site.conf
       - ./docker/nginx/fastcgi.conf:/etc/nginx/fastcgi.conf
     ports:
@@ -17,6 +23,6 @@ services:
     image: erdiko_php7fpm
     build:
       context: ./docker/php7
+    volumes_from: [data]
     volumes:
-      - .:/code
       - ./docker/php7/conf.d:/usr/local/etc/php/conf.d
