@@ -1,260 +1,260 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19127",
+"creatorBuild": "19137",
 "files": {
-	"\/favicon-120.png": {
+	"\/default\/favicon-120.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6058,
-		"inputAbbreviatedPath": "\/favicon-120.png",
-		"outputAbbreviatedPath": "\/favicon-120.png",
+		"inputAbbreviatedPath": "\/default\/favicon-120.png",
+		"outputAbbreviatedPath": "\/default\/favicon-120.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/favicon-152.png": {
+	"\/default\/favicon-152.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7762,
-		"inputAbbreviatedPath": "\/favicon-152.png",
-		"outputAbbreviatedPath": "\/favicon-152.png",
+		"inputAbbreviatedPath": "\/default\/favicon-152.png",
+		"outputAbbreviatedPath": "\/default\/favicon-152.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/favicon-76.png": {
+	"\/default\/favicon-76.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3605,
-		"inputAbbreviatedPath": "\/favicon-76.png",
-		"outputAbbreviatedPath": "\/favicon-76.png",
+		"inputAbbreviatedPath": "\/default\/favicon-76.png",
+		"outputAbbreviatedPath": "\/default\/favicon-76.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/favicon-96.png": {
+	"\/default\/favicon-96.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4519,
-		"inputAbbreviatedPath": "\/favicon-96.png",
-		"outputAbbreviatedPath": "\/favicon-96.png",
+		"inputAbbreviatedPath": "\/default\/favicon-96.png",
+		"outputAbbreviatedPath": "\/default\/favicon-96.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/ErdikoShieldLogo.png": {
+	"\/default\/images\/ErdikoShieldLogo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 27567,
-		"inputAbbreviatedPath": "\/images\/ErdikoShieldLogo.png",
-		"outputAbbreviatedPath": "\/images\/ErdikoShieldLogo.png",
+		"inputAbbreviatedPath": "\/default\/images\/ErdikoShieldLogo.png",
+		"outputAbbreviatedPath": "\/default\/images\/ErdikoShieldLogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/grid-item.png": {
+	"\/default\/images\/grid-item.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6905,
-		"inputAbbreviatedPath": "\/images\/grid-item.png",
-		"outputAbbreviatedPath": "\/images\/grid-item.png",
+		"inputAbbreviatedPath": "\/default\/images\/grid-item.png",
+		"outputAbbreviatedPath": "\/default\/images\/grid-item.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/slide1.png": {
+	"\/default\/images\/slide1.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 15948,
-		"inputAbbreviatedPath": "\/images\/slide1.png",
-		"outputAbbreviatedPath": "\/images\/slide1.png",
+		"inputAbbreviatedPath": "\/default\/images\/slide1.png",
+		"outputAbbreviatedPath": "\/default\/images\/slide1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/slide2.png": {
+	"\/default\/images\/slide2.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16347,
-		"inputAbbreviatedPath": "\/images\/slide2.png",
-		"outputAbbreviatedPath": "\/images\/slide2.png",
+		"inputAbbreviatedPath": "\/default\/images\/slide2.png",
+		"outputAbbreviatedPath": "\/default\/images\/slide2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/slide3.png": {
+	"\/default\/images\/slide3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16378,
-		"inputAbbreviatedPath": "\/images\/slide3.png",
-		"outputAbbreviatedPath": "\/images\/slide3.png",
+		"inputAbbreviatedPath": "\/default\/images\/slide3.png",
+		"outputAbbreviatedPath": "\/default\/images\/slide3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.php": {
+	"\/default\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.php",
+		"inputAbbreviatedPath": "\/default\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/info.php": {
+	"\/default\/info.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/info.php",
+		"inputAbbreviatedPath": "\/default\/info.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/themes\/bootstrap\/css\/base\/styles.min.css": {
+	"\/default\/themes\/bootstrap\/css\/base\/styles.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/css\/base\/styles.min.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/base\/styles.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/themes\/bootstrap\/css\/default.css": {
+	"\/default\/themes\/bootstrap\/css\/default.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/css\/default.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/default.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/themes\/bootstrap\/css\/font-awesome-animation.css": {
+	"\/default\/themes\/bootstrap\/css\/font-awesome-animation.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/css\/font-awesome-animation.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/font-awesome-animation.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/themes\/bootstrap\/css\/styles.min.css": {
+	"\/default\/themes\/bootstrap\/css\/styles.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/css\/styles.min.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/styles.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/themes\/bootstrap\/images\/slide1.png": {
+	"\/default\/themes\/bootstrap\/images\/slide1.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 15948,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide1.png",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide1.png",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/images\/slide1.png",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/images\/slide1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/themes\/bootstrap\/images\/slide2.png": {
+	"\/default\/themes\/bootstrap\/images\/slide2.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16347,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide2.png",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide2.png",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/images\/slide2.png",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/images\/slide2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/themes\/bootstrap\/images\/slide3.png": {
+	"\/default\/themes\/bootstrap\/images\/slide3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16378,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide3.png",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/images\/slide3.png",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/images\/slide3.png",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/images\/slide3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/themes\/bootstrap\/js\/bootstrap.js": {
+	"\/default\/themes\/bootstrap\/js\/bootstrap.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/bootstrap.js",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/bootstrap-min.js",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/bootstrap.js",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/min\/bootstrap-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/themes\/bootstrap\/js\/bootstrap.min.js": {
+	"\/default\/themes\/bootstrap\/js\/bootstrap.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/bootstrap.min.js",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/bootstrap.min-min.js",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/bootstrap.min.js",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/min\/bootstrap.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/themes\/bootstrap\/js\/carousel.js": {
+	"\/default\/themes\/bootstrap\/js\/carousel.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/carousel.js",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/carousel-min.js",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/carousel.js",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/min\/carousel-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/themes\/bootstrap\/js\/default.js": {
+	"\/default\/themes\/bootstrap\/js\/default.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/default.js",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/default-min.js",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/default.js",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/min\/default-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/themes\/bootstrap\/js\/home.js": {
+	"\/default\/themes\/bootstrap\/js\/home.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/home.js",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/home-min.js",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/home.js",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/min\/home-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/themes\/bootstrap\/js\/scripts.min.js": {
+	"\/default\/themes\/bootstrap\/js\/scripts.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/js\/scripts.min.js",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/js\/min\/scripts.min-min.js",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/scripts.min.js",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/js\/min\/scripts.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/themes\/bootstrap\/less\/bootswatch.less": {
+	"\/default\/themes\/bootstrap\/less\/bootswatch.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -262,8 +262,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/less\/bootswatch.less",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/css\/bootswatch.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/less\/bootswatch.less",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/bootswatch.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -274,7 +274,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/themes\/bootstrap\/less\/default.less": {
+	"\/default\/themes\/bootstrap\/less\/default.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -282,8 +282,8 @@
 		"ieCompatibility": 1,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/less\/default.less",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/css\/default.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/less\/default.less",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/default.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -294,7 +294,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/themes\/bootstrap\/less\/media-queries.less": {
+	"\/default\/themes\/bootstrap\/less\/media-queries.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -302,8 +302,8 @@
 		"ieCompatibility": 1,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/less\/media-queries.less",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/css\/media-queries.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/less\/media-queries.less",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/media-queries.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -314,7 +314,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/themes\/bootstrap\/less\/mixins.less": {
+	"\/default\/themes\/bootstrap\/less\/mixins.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -322,8 +322,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/less\/mixins.less",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/css\/mixins.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/less\/mixins.less",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -334,7 +334,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/themes\/bootstrap\/less\/style.less": {
+	"\/default\/themes\/bootstrap\/less\/style.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -342,8 +342,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/less\/style.less",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/css\/style.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/less\/style.less",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -354,7 +354,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/themes\/bootstrap\/less\/variables.less": {
+	"\/default\/themes\/bootstrap\/less\/variables.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -362,8 +362,389 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/themes\/bootstrap\/less\/variables.less",
-		"outputAbbreviatedPath": "\/themes\/bootstrap\/css\/variables.css",
+		"inputAbbreviatedPath": "\/default\/themes\/bootstrap\/less\/variables.less",
+		"outputAbbreviatedPath": "\/default\/themes\/bootstrap\/css\/variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/site2\/favicon-120.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6058,
+		"inputAbbreviatedPath": "\/site2\/favicon-120.png",
+		"outputAbbreviatedPath": "\/site2\/favicon-120.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/favicon-152.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7762,
+		"inputAbbreviatedPath": "\/site2\/favicon-152.png",
+		"outputAbbreviatedPath": "\/site2\/favicon-152.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/favicon-76.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3605,
+		"inputAbbreviatedPath": "\/site2\/favicon-76.png",
+		"outputAbbreviatedPath": "\/site2\/favicon-76.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/favicon-96.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4519,
+		"inputAbbreviatedPath": "\/site2\/favicon-96.png",
+		"outputAbbreviatedPath": "\/site2\/favicon-96.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/images\/ErdikoShieldLogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27567,
+		"inputAbbreviatedPath": "\/site2\/images\/ErdikoShieldLogo.png",
+		"outputAbbreviatedPath": "\/site2\/images\/ErdikoShieldLogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/images\/grid-item.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6905,
+		"inputAbbreviatedPath": "\/site2\/images\/grid-item.png",
+		"outputAbbreviatedPath": "\/site2\/images\/grid-item.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/images\/slide1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15948,
+		"inputAbbreviatedPath": "\/site2\/images\/slide1.png",
+		"outputAbbreviatedPath": "\/site2\/images\/slide1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/images\/slide2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16347,
+		"inputAbbreviatedPath": "\/site2\/images\/slide2.png",
+		"outputAbbreviatedPath": "\/site2\/images\/slide2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/images\/slide3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16378,
+		"inputAbbreviatedPath": "\/site2\/images\/slide3.png",
+		"outputAbbreviatedPath": "\/site2\/images\/slide3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/index-site3.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/index-site3.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/site2\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/site2\/info.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/info.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/site2\/themes\/bootstrap\/css\/base\/styles.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/base\/styles.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/site2\/themes\/bootstrap\/css\/default.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/default.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/site2\/themes\/bootstrap\/css\/font-awesome-animation.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/font-awesome-animation.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/site2\/themes\/bootstrap\/css\/styles.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/styles.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/site2\/themes\/bootstrap\/images\/slide1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15948,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/images\/slide1.png",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/images\/slide1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/themes\/bootstrap\/images\/slide2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16347,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/images\/slide2.png",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/images\/slide2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/themes\/bootstrap\/images\/slide3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16378,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/images\/slide3.png",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/images\/slide3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site2\/themes\/bootstrap\/js\/bootstrap.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/bootstrap.js",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/min\/bootstrap-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/site2\/themes\/bootstrap\/js\/bootstrap.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/bootstrap.min.js",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/min\/bootstrap.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/site2\/themes\/bootstrap\/js\/carousel.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/carousel.js",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/min\/carousel-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/site2\/themes\/bootstrap\/js\/default.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/default.js",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/min\/default-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/site2\/themes\/bootstrap\/js\/home.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/home.js",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/min\/home-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/site2\/themes\/bootstrap\/js\/scripts.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/scripts.min.js",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/js\/min\/scripts.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/site2\/themes\/bootstrap\/less\/bootswatch.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/less\/bootswatch.less",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/bootswatch.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/site2\/themes\/bootstrap\/less\/default.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/less\/default.less",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/default.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/site2\/themes\/bootstrap\/less\/media-queries.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/less\/media-queries.less",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/media-queries.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/site2\/themes\/bootstrap\/less\/mixins.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/less\/mixins.less",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/mixins.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/site2\/themes\/bootstrap\/less\/style.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/less\/style.less",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/style.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/site2\/themes\/bootstrap\/less\/variables.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/site2\/themes\/bootstrap\/less\/variables.less",
+		"outputAbbreviatedPath": "\/site2\/themes\/bootstrap\/css\/variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

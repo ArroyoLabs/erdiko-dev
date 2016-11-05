@@ -6,5 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'erdiko\\wordpress\\' => array($vendorDir . '/erdiko/wordpress/src'),
     'erdiko\\core\\' => array($vendorDir . '/erdiko/core/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
 );

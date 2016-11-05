@@ -1,78 +1,33 @@
 [
     {
-        "name": "twbs/bootstrap",
-        "version": "v3.3.6",
-        "version_normalized": "3.3.6.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "81df608a40bf0629a1dc08e584849bb1e43e0b7a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/81df608a40bf0629a1dc08e584849bb1e43e0b7a",
-            "reference": "81df608a40bf0629a1dc08e584849bb1e43e0b7a",
-            "shasum": ""
-        },
-        "replace": {
-            "twitter/bootstrap": "self.version"
-        },
-        "time": "2015-11-24 19:37:05",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.3.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jacob Thornton",
-                "email": "jacobthornton@gmail.com"
-            },
-            {
-                "name": "Mark Otto",
-                "email": "markdotto@gmail.com"
-            }
-        ],
-        "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-        "homepage": "http://getbootstrap.com",
-        "keywords": [
-            "JS",
-            "css",
-            "framework",
-            "front-end",
-            "less",
-            "mobile-first",
-            "responsive",
-            "web"
-        ]
-    },
-    {
         "name": "psr/log",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/php-fig/log.git",
-            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
             "shasum": ""
         },
-        "time": "2012-12-21 11:40:51",
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-10-10 12:19:37",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "Psr\\Log\\": ""
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -86,6 +41,7 @@
             }
         ],
         "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
         "keywords": [
             "log",
             "psr",
@@ -135,27 +91,27 @@
     },
     {
         "name": "mustache/mustache",
-        "version": "v2.10.0",
-        "version_normalized": "2.10.0.0",
+        "version": "v2.11.1",
+        "version_normalized": "2.11.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/bobthecow/mustache.php.git",
-            "reference": "0bb2f76e2f34a8864a32be34c4ec66274d76c05e"
+            "reference": "a3f6d55996dd28b58f3a909d474189a3c1aa693f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/0bb2f76e2f34a8864a32be34c4ec66274d76c05e",
-            "reference": "0bb2f76e2f34a8864a32be34c4ec66274d76c05e",
+            "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/a3f6d55996dd28b58f3a909d474189a3c1aa693f",
+            "reference": "a3f6d55996dd28b58f3a909d474189a3c1aa693f",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.4"
         },
         "require-dev": {
-            "fabpot/php-cs-fixer": "~1.6",
+            "friendsofphp/php-cs-fixer": "~1.11",
             "phpunit/phpunit": "~3.7|~4.0|~5.0"
         },
-        "time": "2016-02-27 19:22:46",
+        "time": "2016-07-31 06:18:27",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -182,19 +138,51 @@
         ]
     },
     {
+        "name": "erdiko/wordpress",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "dist": {
+            "type": "path",
+            "url": "../erdiko-wordpress",
+            "reference": "ad862e3c732b79e09c7354acfd2a09fbb25c013a",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "erdiko\\wordpress\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Arroyo Labs",
+                "email": "info@arroyolabs.com"
+            }
+        ],
+        "description": "Erdiko Wordpress package",
+        "homepage": "http://erdiko.org",
+        "keywords": [
+            "erdiko",
+            "erdiko package",
+            "erdiko-wordpress"
+        ],
+        "transport-options": {
+            "symlink": true
+        }
+    },
+    {
         "name": "erdiko/core",
         "version": "dev-develop",
         "version_normalized": "dev-develop",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ArroyoLabs/erdiko-core.git",
-            "reference": "b5401961c170d1d09d4292c5e97cffe3ac281333"
-        },
         "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ArroyoLabs/erdiko-core/zipball/b5401961c170d1d09d4292c5e97cffe3ac281333",
-            "reference": "b5401961c170d1d09d4292c5e97cffe3ac281333",
-            "shasum": ""
+            "type": "path",
+            "url": "../erdiko-core",
+            "reference": "d757e9fcd0ce2776ea22eff7aa889df9d3dcf31c",
+            "shasum": null
         },
         "require": {
             "erusev/parsedown": ">=1.6",
@@ -202,9 +190,8 @@
             "php": ">=5.4.0",
             "psr/log": "^1.0"
         },
-        "time": "2016-05-26 05:46:14",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "erdiko\\core\\": "src/"
@@ -219,16 +206,15 @@
                 "email": "info@arroyolabs.com"
             }
         ],
-        "description": "Erdiko core - MVC micro framework",
+        "description": "Erdiko micro MVC core libraries",
         "homepage": "http://erdiko.org",
         "keywords": [
             "erdiko",
             "erdiko-core",
             "framework"
         ],
-        "support": {
-            "source": "https://github.com/ArroyoLabs/erdiko-core/tree/develop",
-            "issues": "https://github.com/ArroyoLabs/erdiko-core/issues"
+        "transport-options": {
+            "symlink": true
         }
     }
 ]

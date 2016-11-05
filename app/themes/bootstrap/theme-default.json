@@ -1,0 +1,15 @@
+{
+    "namespace": "/app/themes/bootstrap",
+    "public": "/public/themes/bootstrap",
+    "parent": "/vendor/erdiko/bootstrap",
+    "css": {
+    },
+    "js": {
+    },
+    "templates": {
+    },
+    "layouts": {
+    },
+    "views": {
+    }
+}

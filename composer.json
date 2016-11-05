@@ -1,7 +1,7 @@
 {
     "name": "erdiko/erdiko",
-    "description": "Erdiko MVC micro framework (enterprise glue)",
-    "keywords": ["framework", "erdiko"],
+    "description": "Erdiko micro MVC framework",
+    "keywords": ["framework", "erdiko", "mvc"],
     "homepage": "http://erdiko.org",
     "license": "MIT",
     "authors": [
@@ -10,20 +10,29 @@
             "email": "info@arroyolabs.com"
         }
     ],
-    "require": {
-        "php": ">=5.4.0",
-        "erdiko/core": "dev-develop as 0.9.0",
-        "twbs/bootstrap": "^3.3.6"
-    },
     "config": {
         "vendor-dir": "vendor",
         "minimum-stability": "dev"
     },
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/ArroyoLabs/erdiko"
-    },{
-        "type": "vcs",
-        "url": "https://github.com/ArroyoLabs/erdiko-core"
-    }]
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../erdiko-core",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../erdiko-wordpress",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "erdiko/core": "@dev",
+        "erdiko/wordpress": "@dev"
+    }
 }
