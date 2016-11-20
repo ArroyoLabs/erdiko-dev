@@ -6,9 +6,9 @@ install:
 
 script:
   - ls -lah
-  - docker-compose up -d
-  - docker-compose ps
-  - docker exec erdiko_php7 ls -lah
+  - sudo docker-compose up -d
+  - sudo docker-compose ps
+  - sudo docker exec erdiko_php7 ls -lah
 
 notifications:
   email:
