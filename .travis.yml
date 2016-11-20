@@ -1,0 +1,6 @@
+script:
+  - docker-compose up
+
+notifications:
+  email:
+    - john@arroyolabs.com 
