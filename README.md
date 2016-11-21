@@ -3,6 +3,10 @@ Erdiko
 
 [![Package version](https://img.shields.io/packagist/v/erdiko/erdiko.svg?style=flat-square)](https://packagist.org/packages/erdiko/erdiko) [![Travis CI](https://travis-ci.org/ArroyoLabs/erdiko-dev.svg?branch=master)](https://travis-ci.org/ArroyoLabs/erdiko-dev.svg?branch=master)
 
+**This project is for development and testing only**
+
+Please see [erdiko](https://github.com/ArroyoLabs/erdiko "Erdiko") and [erdiko-core](https://github.com/ArroyoLabs/erdiko-core "Erdiko Core") for your project needs.
+
 **Erdiko is Enterprise Glue**
 
 Erdiko is a micro MVC framework or better yet, an enterprise framework for APIs, lean front-ends and mash-ups.
