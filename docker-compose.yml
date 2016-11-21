@@ -23,6 +23,7 @@ services:
     image: erdiko_php7fpm
     build:
       context: ./docker/php7
+      dockerfile: Dockerfile-utest
     volumes_from: [data]
     volumes:
       - ./docker/php7/conf.d:/usr/local/etc/php/conf.d
