@@ -38,6 +38,7 @@ RUN apt-get update \
     && apt-get clean
 
 COPY scripts /src
+RUN cd /src && chmod 770 composer.sh && ./composer.sh
 RUN cd /src && chmod 770 phpunit.sh && ./phpunit.sh
 
 EXPOSE 9000

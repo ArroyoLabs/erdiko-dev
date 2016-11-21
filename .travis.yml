@@ -3,6 +3,7 @@ sudo: required
 install:
   - curl -sSL https://get.docker.com/ | sudo sh
   - sudo pip install docker-compose
+  - ls -lah
 
 script:
   - ls -lah
