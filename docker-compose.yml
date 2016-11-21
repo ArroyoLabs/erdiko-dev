@@ -4,7 +4,7 @@ services:
   data:
     image: busybox
     volumes:
-      - .:/erdiko
+      - .:/code
       - ../erdiko-core:/erdiko-core
       - ../erdiko-wordpress:/erdiko-wordpress  
   webserver:
