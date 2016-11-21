@@ -34,8 +34,8 @@ RUN apt-get update \
 # Install additional scripts (composer and phpunit)
 COPY scripts /src
 RUN cd /src && chmod 770 *.sh
-RUN ./composer.sh
-RUN ./phpunit.sh
+RUN /src/composer.sh
+RUN /src/phpunit.sh
 
 EXPOSE 9000
 
