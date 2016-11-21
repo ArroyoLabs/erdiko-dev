@@ -7,11 +7,11 @@ Erdiko
 
 Please see [erdiko](https://github.com/ArroyoLabs/erdiko "Erdiko") and [erdiko-core](https://github.com/ArroyoLabs/erdiko-core "Erdiko Core") for your project needs.
 
-**Erdiko is Enterprise Glue**
+**Erdiko Micro MVC**
 
-Erdiko is a micro MVC framework or better yet, an enterprise framework for APIs, lean front-ends and mash-ups.
+Erdiko is a micro MVC framework or better yet, a framework for APIs, lean web front-ends and web apps (start ups).
 
-Get work done without the bloat!
+Iterate on your app without a bloated PHP stack!
 
 http://erdiko.org/
 
