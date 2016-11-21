@@ -8,7 +8,7 @@ script:
   - ls -lah
   - sudo docker-compose up -d
   - sudo docker-compose ps
-  - sudo docker exec erdiko_php7 ls -lah
+  - sudo docker exec erdiko_php7 cd /erdiko-core/tests && phpunit AllTests
 
 notifications:
   email:
