@@ -10,10 +10,11 @@ before_script:
   - cd ../
   - wget https://github.com/ArroyoLabs/erdiko-core/archive/develop.zip
   - unzip develop.zip
+  - mv erdiko-core-develop erdiko-core
   - ls -alh
   # - cd ../ && sudo git clone -b develop https://github.com/ArroyoLabs/erdiko-core.git
   # - cd git sudo clone -b develop https://github.com/ArroyoLabs/erdiko-wordpress.git
-  # - cd erdiko-dev
+  - cd erdiko-dev
 
 script:
   - ls -lah
