@@ -5,8 +5,8 @@ install:
   - sudo pip install docker-compose
   - pwd
   - ls -lah
-  - cd ../ && git clone -b develop https://github.com/ArroyoLabs/erdiko-core.git
-  - cd git clone -b develop https://github.com/ArroyoLabs/erdiko-wordpress.git
+  - cd ../ && sudo git clone -b develop https://github.com/ArroyoLabs/erdiko-core.git
+  - cd git sudo clone -b develop https://github.com/ArroyoLabs/erdiko-wordpress.git
   - cd erdiko-dev
 
 script:
