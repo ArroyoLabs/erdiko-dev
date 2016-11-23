@@ -5,7 +5,7 @@
     "namespace": "/app/themes/bootstrap",
     "public": "/public/themes/bootstrap",
     "css": {
-        "default":{
+        "default": {
             "file": "/themes/bootstrap/css/styles.min.css",
             "order": 1,
             "active": 1
@@ -31,11 +31,11 @@
         "footer": {
             "file": "page/footer"
         },
-        "analytics": {
-            "file": "page/analytics"
+        "google_body": {
+            "file": "page/google_body"
         },
-        "messages": {
-            "file": "page/messages"
+        "google_header": {
+            "file": "page/google_header"
         }
     },
     "layouts": {
