@@ -6,24 +6,17 @@ services:
     volumes:
       - .:/code
       - ../erdiko-core:/erdiko-core
-      - ../erdiko-wordpress:/erdiko-wordpress  
+      - ../erdiko-wordpress:/erdiko-wordpress 
   webserver:
-    container_name: erdiko_nginx
-    image: nginx:latest
-    env_file: environment.env
+    extends:
+      file: ./docker/nginx/docker-compose.yml
+      service: webserver
     volumes_from: [data]
-    volumes:
-      - ./docker/nginx/site-multisite.conf:/etc/nginx/conf.d/site.conf
-      - ./docker/nginx/fastcgi.conf:/etc/nginx/fastcgi.conf
     ports:
       - "8088:80"
   php:
-    container_name: erdiko_php7
-    env_file: environment.env
-    image: erdiko_php7fpm
-    build:
-      context: ./docker/php7
-      dockerfile: Dockerfile
+    extends:
+      file: ./docker/php/7.0/docker-compose.yml
+      service: php
     volumes_from: [data]
-    volumes:
-      - ./docker/php7/conf.d:/usr/local/etc/php/conf.d
+    container_name: erdiko_php
