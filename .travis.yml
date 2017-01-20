@@ -21,7 +21,7 @@ script:
   - sudo docker-compose up -d
   - sudo docker-compose ps
   - sudo chmod 770 unittests.sh
-  - sudo docker exec erdiko_php7 /code/unittests.sh
+  - sudo docker exec erdiko_php /code/unittests.sh
 
 notifications:
   email:
